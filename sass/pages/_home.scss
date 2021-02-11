@@ -38,6 +38,21 @@
     background-color: $color-grey-2;
     padding: 20rem 0 ;
     margin-top: -13vh;
+
+    & ul li{
+        padding: 2rem;
+        // list-style-type: none;
+    }
+
+    & .tour_details {
+        display: flex;
+        gap: 4rem;
+        
+
+        & .duplicate {
+            width: 40rem;
+        }
+    }
 }
 
 .section-stories{
@@ -48,7 +63,7 @@
         display: flex;
         gap: 2em;
 
-        @media only screen and (max-width: 1200px) {
+        @media only screen and (max-width: 1300px) {
             display: flex;
             flex-direction: column;
         }

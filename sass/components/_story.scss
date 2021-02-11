@@ -8,6 +8,7 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     // transform: skewX(-12deg);
+    align-items: center;
 
     // & > *{
         //transform: skewX(-12deg);
@@ -27,10 +28,6 @@
         //transform: translateX(-3rem);
         // transform: skewX(12deg);
         position: relative;
-
-        @media only screen and (max-width: 1200px) {
-            // float: left;
-        }
     }
 
     &__image{
@@ -42,6 +39,15 @@
 
     &__text{
         // transform: skewX(12deg);
+        // text-align: center;
+
+        & h3 {
+            text-align:center;
+        }
+
+        & p {
+            text-align: start;
+        }
     }
 
     &__caption{
@@ -67,6 +73,13 @@
     &:hover &__image{
         transform: translateX(-4rem) scale(1);
         filter: blur(3px) brightness(80%);
+    }
+
+    @media only screen and (max-width: 1300px) {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        align-items: center;
     }
 
     @include respond(tab-port) {

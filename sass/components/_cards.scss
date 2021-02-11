@@ -17,7 +17,7 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
-        box-shadow: 2rem 1.5rem 4rem rgba($color-black, .15);
+        // box-shadow: 2rem 1.5rem 4rem rgba($color-black, .15);
 
         &--front{
             background-color: $color-white;
@@ -25,7 +25,7 @@
 
         &--back{
             background-color: $color-primary;
-            transform: rotateY(180deg);
+            // transform: rotateY(180deg);
 
             &-1{
                 background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark);
@@ -42,13 +42,13 @@
     }
 
     
-    &:hover &__side--front{
-        transform: rotateY(-180deg);
-    }
+    // &:hover &__side--front{
+    //     transform: rotateY(-180deg);
+    // }
 
-    &:hover &__side--back{
-        transform: rotateY(0);
-    }
+    // &:hover &__side--back{
+    //     transform: rotateY(0);
+    // }
 
     //FRONT SIDE STYLING
     &__picture{
@@ -110,6 +110,9 @@
     }
 
     &__details{
+        height: 25rem;
+        background: rgba(240, 240, 240, 0.308);
+
 
         ul{
             list-style: none;
@@ -153,9 +156,10 @@
         margin-bottom: 8rem;
     }
 
-    @include respond(tab-port) {
+    // @include respond(tab-port) {
+        @media only screen and (max-width: 2000px) {
         height: auto;
-        box-shadow: 2rem 1.5rem 4rem rgba($color-black, .15);
+        // box-shadow: 2rem 1.5rem 4rem rgba($color-black, .15);
     
         &__side{
             height: auto;
@@ -164,13 +168,13 @@
             box-shadow:none;
 
 
-            &--back{
-                transform: rotateY(0deg);
+            // &--back{
+            //     transform: rotateY(0deg);
     
-                margin-top: -6rem;
-                // -webkit-clip-path: polygon(0 20%,100% 0,100% 100%,0 100%);
-                // clip-path: polygon(0 20%,100% 0,100% 100%,0 100%);
-            }
+            //     margin-top: -6rem;
+            //     // -webkit-clip-path: polygon(0 20%,100% 0,100% 100%,0 100%);
+            //     // clip-path: polygon(0 20%,100% 0,100% 100%,0 100%);
+            // }
         }
     
         
@@ -185,7 +189,7 @@
             left: 0;
             transform: translate(0);
             width: 100%;
-            padding:7rem 0;
+            padding:2rem 0;
             }
     
         &__price-box{

@@ -194,6 +194,13 @@ body {
   background-color: #ffffff;
   padding: 20rem 0;
   margin-top: -13vh; }
+  .section-tours ul li {
+    padding: 2rem; }
+  .section-tours .tour_details {
+    display: flex;
+    gap: 4rem; }
+    .section-tours .tour_details .duplicate {
+      width: 40rem; }
 
 .section-stories {
   padding: 15rem 0;
@@ -201,7 +208,7 @@ body {
   .section-stories .customer_reviews {
     display: flex;
     gap: 2em; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1300px) {
       .section-stories .customer_reviews {
         display: flex;
         flex-direction: column; } }
@@ -342,6 +349,11 @@ body {
   .feature-box__icon {
     width: 40%;
     margin-bottom: 5rem; }
+  .feature-box__text {
+    text-align: start; }
+    @media (max-width: 37.5em) {
+      .feature-box__text {
+        text-align: center; } }
   .feature-box:hover {
     transform: scale(1.05) translateY(-0.7rem);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
@@ -363,23 +375,17 @@ body {
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 3px;
-    box-shadow: 2rem 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    border-radius: 3px; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
-      background-color: #7ed56f;
-      transform: rotateY(180deg); }
+      background-color: #7ed56f; }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b473); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
   .card__picture {
     background-size: cover;
     height: 23rem;
@@ -412,15 +418,18 @@ body {
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
       padding: .79rem; }
-  .card__details ul {
-    list-style: none;
-    width: 80%; }
-    .card__details ul li {
-      text-align: center;
-      padding: 1rem;
-      font-size: 1.6rem; }
-      .card__details ul li:not(:last-child) {
-        border-bottom: 1px solid #e6e6e6; }
+  .card__details {
+    height: 25rem;
+    background: rgba(240, 240, 240, 0.308); }
+    .card__details ul {
+      list-style: none;
+      width: 80%; }
+      .card__details ul li {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.6rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #e6e6e6; }
   .card__cta {
     position: absolute;
     top: 60%;
@@ -438,18 +447,14 @@ body {
     font-size: 6rem;
     font-weight: 100;
     margin-bottom: 8rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 2000px) {
     .card {
-      height: auto;
-      box-shadow: 2rem 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      height: auto; }
       .card__side {
         height: auto;
         position: relative;
         border-radius: 3px;
         box-shadow: none; }
-        .card__side--back {
-          transform: rotateY(0deg);
-          margin-top: -6rem; }
       .card:hover .card__side--front {
         transform: rotateY(0deg); }
       .card__cta {
@@ -458,7 +463,7 @@ body {
         left: 0;
         transform: translate(0);
         width: 100%;
-        padding: 7rem 0; }
+        padding: 2rem 0; }
       .card__price-box {
         margin-bottom: -4rem; }
       .card__price {
@@ -477,7 +482,8 @@ body {
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  align-items: center; }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -487,6 +493,10 @@ body {
   .story__image {
     height: 100%;
     transition: all .5s; }
+  .story__text h3 {
+    text-align: center; }
+  .story__text p {
+    text-align: start; }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -505,6 +515,12 @@ body {
   .story:hover .story__image {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
+  @media only screen and (max-width: 1300px) {
+    .story {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-items: center; } }
   @media (max-width: 56.25em) {
     .story {
       width: 100%;
@@ -858,7 +874,7 @@ body {
   display: none; }
 
 .navigation__button {
-  background-color: #fff;
+  background-color: transparent;
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
@@ -885,7 +901,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#7ed56f, #28b473);
+  background-image: radial-gradient(#fff, whitesmoke);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media (max-width: 56.25em) {
@@ -924,10 +940,10 @@ body {
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: #fff;
+  color: #7ed56f;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-image: linear-gradient(100deg, transparent 0%, transparent 50%, #28b473 50%);
   background-size: 220%;
   transition: all .4s; }
   .navigation__link:link span, .navigation__link:visited span {
