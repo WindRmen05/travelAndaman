@@ -1,0 +1,19 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css"
+  },
+  "author": "Aravind",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "concat": "^1.0.3"
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

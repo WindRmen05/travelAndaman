@@ -1,0 +1,96 @@
+.section-about{
+    background-color: $color-grey-1;
+    padding: 25rem 15rem 25rem 15rem;
+    margin-top: -25vh;
+    background-image: url(img\nat-1-large.jpg);
+
+    & .about_text {
+        width: 100%;
+        z-index: 2;
+
+        @include respond(tab-land) {
+            width: 100%;
+        }
+    }
+
+    & .about_styling {
+        display:flex;
+        // align-items:center;
+        // justify-content: start;
+
+        @include respond(tab-phone) {
+            flex-direction: column;
+        }
+}
+}
+.section-features{
+    padding:20rem 0 10rem 0;
+    background-color: $color-grey-2;
+    text-align: center;
+    // background-image: linear-gradient(to right bottom,
+    // hsla(202, 83%, 32%, 0.801), hsla(202, 84%, 53%, 0.801)),
+    // url(../img/nat-4.jpg);
+    
+    margin-top: -15vh;
+}
+
+.section-tours{
+    background-color: $color-grey-2;
+    padding: 20rem 0 ;
+    margin-top: -13vh;
+}
+
+.section-stories{
+    padding: 15rem 0;
+    position: relative;
+    
+    & .customer_reviews {
+        display: flex;
+        gap: 2em;
+
+        @media only screen and (max-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.section-book{
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom,$color-primary, $color-teritiary-dark);
+}
+
+.book{
+    background-image: url(../img/nat-10.jpg);
+    // opacity: .5;
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
+
+
+    @include respond(tab-land) {
+        background-image: 
+                          url(../img/nat-10.jpg);
+                          background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        background-image:url(../img/nat-10.jpg);
+    }
+
+    &__form{
+        width: 80%;
+        padding: 6rem ;
+    }
+
+    &__heading{
+        width: 50%;
+        margin-top: -3rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            
+        }
+    }
+
+}
