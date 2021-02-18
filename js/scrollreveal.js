@@ -43,4 +43,3 @@ sr.reveal(".col-1-of-4", bottom);
 sr.reveal(".form__group", left);
 sr.reveal(".footer__item", footer);
 sr.reveal(".header__logo", footer);
-sr.reveal("#navi", scaleUp);
