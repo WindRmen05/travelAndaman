@@ -17,7 +17,8 @@ tab-port
 .body {
   margin: 0px;
   padding: 0px;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  overflow-x: hidden; }
 
 html {
   overflow-x: hidden;
