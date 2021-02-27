@@ -2,40 +2,40 @@
     margin: 0px;
     padding: 0px;
     box-sizing: inherit;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
 
 html{
-    overflow-x:hidden;
+    overflow-x:hidden!important;
     //this defines what 1 rem is//
     font-size: 62.5%; //1rem = 10px//16px =62.5%
 
     @include respond(tab-land) {// width <=900
         font-size: 56.25%; //1rem = 9px// 9px = 56.25%
-        overflow-x:hidden;
+        overflow-x:hidden!important;
     }
 
     @include respond(tab-port) {//width <=600
         font-size: 50%; //1rem = 8px// 8px = 50%
-        overflow-x:hidden;
+        overflow-x:hidden!important;
     }
 
     
 
     @include respond(tab-desktop) {
         font-size: 75%; //1rem = 12px// 12px = 75%
-        overflow-x:hidden;
+        overflow-x:hidden!important;
     }
 }
 
 body{
     box-sizing: border-box;
     padding: 3rem;
-    overflow-x:hidden;
+    overflow-x:hidden!important;
 
     @include respond(tab-port) {
         padding: 0; 
-        overflow-x:hidden;
+        overflow-x:hidden!important;
     }
 
 }
