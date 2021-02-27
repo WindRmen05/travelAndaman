@@ -42,6 +42,11 @@
         text-align: center;
     }
 
+    @media only screen and (max-width: 1200px) {
+        &__text-box {
+            top: 50%;
+        }
+    }
     
 }
 

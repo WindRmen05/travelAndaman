@@ -669,6 +669,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  @media only screen and (max-width: 1200px) {
+    .header__text-box {
+      top: 50%; } }
 
 .row {
   max-width: 114rem;
@@ -803,7 +806,7 @@ body {
     right: 6.5rem;
     background-image: radial-gradient(#fff, whitesmoke);
     z-index: 1000;
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 0.88); }
     @media (max-width: 56.25em) {
       .navigation__background {
         top: 4.5rem;
@@ -822,7 +825,7 @@ body {
     z-index: 1500;
     opacity: 0;
     width: 0;
-    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    transition: all 1s cubic-bezier(0.78, -0.55, 0.265, 2); }
   .navigation__list {
     overflow-x: hidden;
     position: absolute;
