@@ -7,8 +7,8 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.5/scrollreveal.min.js"></script>
         <script src="./js/jquery.js"></script>
-        <script src="./js/lightslider.js"></script>
         <script src="./js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
         
         <link rel="stylesheet" href="./css/lightslider.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
@@ -154,176 +155,267 @@
                         Most Popular Tours
                     </h2>
                 </div>
-                <section class="slider">
-                    <div class="tour_details">
-                    <ul id="autoWidth" class="cs-hidden">
-                        <li class="item-a">
-                            <div class="duplicate">
-                                <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>3 Day tour</li>
-                                        <li>Upto 30 people</li>
-                                        <li>2 Tour guides</li>
-                                        <li>Sleeping in cozy hotel</li>
-                                        <li>Difficulty: easy</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back-2">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <div class="card__price">only</div>
-                                        <div class="card__price-value">$297</div>
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">book now!</a>
-                                </div>
-                            </div>
-                        </div>
-                            </div>
-                        </li>
-                        
-                        <li class="item-a">
-                            <div class="duplicate">
-                                <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>3 Day tour</li>
-                                        <li>Upto 30 people</li>
-                                        <li>2 Tour guides</li>
-                                        <li>Sleeping in cozy hotel</li>
-                                        <li>Difficulty: easy</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back-2">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <div class="card__price">only</div>
-                                        <div class="card__price-value">$297</div>
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">book now!</a>
-                                </div>
-                            </div>
-                        </div>
-                            </div>
-                        </li>
 
-                        <li class="item-a">
-                            <div class="duplicate">
-                                <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>3 Day tour</li>
-                                        <li>Upto 30 people</li>
-                                        <li>2 Tour guides</li>
-                                        <li>Sleeping in cozy hotel</li>
-                                        <li>Difficulty: easy</li>
-                                    </ul>
-                                </div>
+                <div class="slick-slider">
+                    <div class="element element-1">
+                        <div class="duplicate">
+                            <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
                             </div>
-                            <div class="card__side card__side--back card__side--back-2">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <div class="card__price">only</div>
-                                        <div class="card__price-value">$297</div>
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">book now!</a>
-                                </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 Day tour</li>
+                                    <li>Upto 30 people</li>
+                                    <li>2 Tour guides</li>
+                                    <li>Sleeping in cozy hotel</li>
+                                    <li>Difficulty: easy</li>
+                                </ul>
                             </div>
                         </div>
-                            </div>
-                        </li>
-
-                        <li class="item-a">
-                            <div class="duplicate">
-                                <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price">only</div>
+                                    <div class="card__price-value">$297</div>
                                 </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>3 Day tour</li>
-                                        <li>Upto 30 people</li>
-                                        <li>2 Tour guides</li>
-                                        <li>Sleeping in cozy hotel</li>
-                                        <li>Difficulty: easy</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back-2">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <div class="card__price">only</div>
-                                        <div class="card__price-value">$297</div>
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">book now!</a>
-                                </div>
+                                <a href="#popup" class="btn btn--white">book now!</a>
                             </div>
                         </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="element element-2">
+                        <div class="duplicate">
+                            <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
                             </div>
-                        </li>
-
-                        <li class="item-a">
-                            <div class="duplicate">
-                                <div class="card">
-                                    <div class="card__side card__side--front">
-                                        <div class="card__picture card__picture--2">
-                                            &nbsp;
-                                        </div>
-                                        <h4 class="card__heading">
-                                            <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
-                                        </h4>
-                                        <div class="card__details">
-                                            <ul>
-                                                <li>3 Day tour</li>
-                                                <li>Upto 30 people</li>
-                                                <li>2 Tour guides</li>
-                                                <li>Sleeping in cozy hotel</li>
-                                                <li>Difficulty: easy</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card__side card__side--back card__side--back-2">
-                                        <div class="card__cta">
-                                            <div class="card__price-box">
-                                                <div class="card__price">only</div>
-                                                <div class="card__price-value">$297</div>
-                                            </div>
-                                            <a href="#popup" class="btn btn--white">book now!</a>
-                                        </div>
-                                    </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 Day tour</li>
+                                    <li>Upto 30 people</li>
+                                    <li>2 Tour guides</li>
+                                    <li>Sleeping in cozy hotel</li>
+                                    <li>Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price">only</div>
+                                    <div class="card__price-value">$297</div>
                                 </div>
+                                <a href="#popup" class="btn btn--white">book now!</a>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-                </section>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="element element-3">
+                        <div class="duplicate">
+                            <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 Day tour</li>
+                                    <li>Upto 30 people</li>
+                                    <li>2 Tour guides</li>
+                                    <li>Sleeping in cozy hotel</li>
+                                    <li>Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price">only</div>
+                                    <div class="card__price-value">$297</div>
+                                </div>
+                                <a href="#popup" class="btn btn--white">book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="element element-4">
+                        <div class="duplicate">
+                            <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 Day tour</li>
+                                    <li>Upto 30 people</li>
+                                    <li>2 Tour guides</li>
+                                    <li>Sleeping in cozy hotel</li>
+                                    <li>Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price">only</div>
+                                    <div class="card__price-value">$297</div>
+                                </div>
+                                <a href="#popup" class="btn btn--white">book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="element element-5">
+                        <div class="duplicate">
+                            <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 Day tour</li>
+                                    <li>Upto 30 people</li>
+                                    <li>2 Tour guides</li>
+                                    <li>Sleeping in cozy hotel</li>
+                                    <li>Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price">only</div>
+                                    <div class="card__price-value">$297</div>
+                                </div>
+                                <a href="#popup" class="btn btn--white">book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="element element-6">
+                        <div class="duplicate">
+                            <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 Day tour</li>
+                                    <li>Upto 30 people</li>
+                                    <li>2 Tour guides</li>
+                                    <li>Sleeping in cozy hotel</li>
+                                    <li>Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price">only</div>
+                                    <div class="card__price-value">$297</div>
+                                </div>
+                                <a href="#popup" class="btn btn--white">book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="element element-7">
+                        <div class="duplicate">
+                            <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 Day tour</li>
+                                    <li>Upto 30 people</li>
+                                    <li>2 Tour guides</li>
+                                    <li>Sleeping in cozy hotel</li>
+                                    <li>Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price">only</div>
+                                    <div class="card__price-value">$297</div>
+                                </div>
+                                <a href="#popup" class="btn btn--white">book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="element element-8">
+                        <div class="duplicate">
+                            <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Sea Tour</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 Day tour</li>
+                                    <li>Upto 30 people</li>
+                                    <li>2 Tour guides</li>
+                                    <li>Sleeping in cozy hotel</li>
+                                    <li>Difficulty: easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price">only</div>
+                                    <div class="card__price-value">$297</div>
+                                </div>
+                                <a href="#popup" class="btn btn--white">book now!</a>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <!-- <div class="element element-9">9</div>
+                    <div class="element element-10">10</div> -->
+                  </div>
                 
                 
                 <!-- <div class="tour_details">
@@ -665,4 +757,33 @@
     -->
     </body>
     <script src="./js/scrollreveal.js"></script>
+    <script>
+    $('.slick-slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        prevArrow: false,
+        nextArrow: false,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
+        });
+    </script>
 </html>
