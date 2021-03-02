@@ -83,7 +83,7 @@
     }
 
     .footer-grid {
-        background-color: #222;
+        background-color: $color-grey-3;
         display: grid;
         // grid-template-columns: 1fr 2fr;
         grid-template-areas: 'cont form';
