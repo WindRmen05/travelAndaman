@@ -113,7 +113,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #777; }
+  color: #808181; }
 
 .heading-primary {
   color: #fff;
@@ -147,7 +147,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #55c57a, #28b473);
+  background-image: linear-gradient(to right, #7bb820, #54791e);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -202,10 +202,9 @@ body {
   padding: 20rem 0 10rem 0;
   background-color: #ffffff;
   text-align: center; }
-  .section-gallery .gallery__six__box {
-    display: flex; }
-    .section-gallery .gallery__six__box-img {
-      width: 60%; }
+  .section-gallery .gallery__box img {
+    width: 100%;
+    height: 100%; }
 
 .section-tours {
   background-color: #ffffff;
@@ -232,7 +231,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b473); }
+  background-image: linear-gradient(to right bottom, #8ec045, #54791e); }
 
 .book {
   background-image: url(../img/nat-10.jpg);
@@ -281,15 +280,15 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #777; }
+  color: #808181; }
   .btn--white::after {
     background-color: #fff; }
 
 .btn--green {
-  background-color: #55c57a;
+  background-color: #7bb820;
   color: #fff; }
   .btn--green::after {
-    background-color: #55c57a; }
+    background-color: #7bb820; }
 
 .btn::after {
   content: "";
@@ -316,16 +315,16 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #7ed56f;
+  color: #8ec045;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #7ed56f;
+  border-bottom: 1px solid #8ec045;
   padding: 3px;
   transition: all .2s;
   letter-spacing: .2rem; }
 
 .btn-text:hover {
-  background-color: #7ed56f;
+  background-color: #8ec045;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -414,11 +413,11 @@ body {
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
-      background-color: #7ed56f; }
+      background-color: #8ec045; }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b473); }
+        background-image: linear-gradient(to right bottom, #8ec045, #54791e); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card__picture {
@@ -448,7 +447,7 @@ body {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
       padding: .79rem; }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 115, 0.85));
+      background-image: linear-gradient(to right bottom, rgba(142, 192, 69, 0.85), rgba(84, 121, 30, 0.85));
       padding: .79rem; }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
@@ -618,11 +617,11 @@ body {
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgab(#000, 0.1);
-    border-bottom: 3px solid #28b473; }
+    border-bottom: 3px solid #54791e; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #ff7730; }
   .form__input::-webkit-input-placeholder {
-    color: #777; }
+    color: #808181; }
 
 .form__label {
   font-size: 1.4rem;
@@ -657,7 +656,7 @@ body {
 .form__radio-button {
   height: 1.8rem;
   width: 1.8rem;
-  border: 0.5rem solid #7ed56f;
+  border: 0.5rem solid #8ec045;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -673,7 +672,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #7ed56f;
+    background-color: #8ec045;
     opacity: 0;
     transition: opacity .2s; }
 
@@ -685,7 +684,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(33, 236, 111, 0.801), rgba(33, 236, 111, 0.801)), url(../img/hero-small.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 117, 45, 0.801), rgba(236, 255, 244, 0.801)), url(/img/travel-andaman1/1.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -758,7 +757,7 @@ body {
 
 .footer {
   margin: o;
-  background-color: #303030;
+  background-color: #3f3f3f;
   color: #e6e6e6;
   font-size: 1.5rem; }
   .footer__logo-box {
@@ -785,14 +784,14 @@ body {
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__link:link, .footer__link:visited {
-    background-color: #303030;
+    background-color: #3f3f3f;
     color: #e6e6e6;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
     transition: all .3s; }
   .footer__link:hover, .footer__link:active {
-    color: #7ed56f;
+    color: #8ec045;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
@@ -837,7 +836,7 @@ body {
       display: flex;
       gap: 2rem;
       align-items: center;
-      letter-spacing: 5px; }
+      letter-spacing: 3px; }
       @media (max-width: 37.5em) {
         .footer .footer-grid .contact-details-item {
           letter-spacing: 2px; } }
@@ -941,10 +940,10 @@ body {
     font-size: 3rem;
     font-weight: 300;
     padding: 1rem 2rem;
-    color: #7ed56f;
+    color: #8ec045;
     text-decoration: none;
     text-transform: uppercase;
-    background-image: linear-gradient(100deg, transparent 0%, transparent 50%, #28b473 50%);
+    background-image: linear-gradient(100deg, transparent 0%, transparent 50%, #54791e 50%);
     background-size: 220%;
     transition: all .4s; }
     .navigation__link:link span, .navigation__link:visited span {
@@ -952,7 +951,7 @@ body {
       display: inline-block; }
   .navigation__link:hover, .navigation__link:active {
     background-position: 100%;
-    color: #7ed56f;
+    color: #8ec045;
     transform: translateX(1rem); }
   .navigation__checkbox:checked ~ .navigation__background {
     transform: scale(80); }

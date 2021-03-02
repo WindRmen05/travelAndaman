@@ -130,7 +130,7 @@
             // justify-content: center;
             gap: 2rem;
             align-items: center;
-            letter-spacing: 5px;
+            letter-spacing: 3px;
 
             @include respond(phone){
                 letter-spacing: 2px;
