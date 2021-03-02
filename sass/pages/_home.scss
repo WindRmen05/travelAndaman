@@ -34,6 +34,28 @@
     margin-top: -15vh;
 }
 
+.section-gallery{
+    padding:20rem 0 10rem 0;
+    background-color: $color-grey-2;
+    text-align: center;
+    // background-image: linear-gradient(to right bottom,
+    // hsla(202, 83%, 32%, 0.801), hsla(202, 84%, 53%, 0.801)),
+    // url(../img/nat-4.jpg);
+    
+    // margin-top: -15vh;
+
+    & .gallery__six {
+
+        &__box {
+            display: flex;
+    
+            &-img {
+                width: 60%;
+            }
+        }
+    }
+}
+
 .section-tours{
     background-color: $color-grey-2;
     padding: 20rem 0 ;
@@ -94,12 +116,16 @@
     }
 
     &__form{
-        width: 80%;
-        padding: 6rem ;
+        // width: 100%;
+        padding: 6rem 3rem 6rem 6rem ;
+
+        @include respond(phone){
+            padding: 6rem 3rem 6rem 3rem ;
+        }
     }
 
     &__heading{
-        width: 50%;
+        width: 100%;
         margin-top: -3rem;
 
         @include respond(tab-port) {

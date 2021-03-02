@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#autoWidth').lightSlider({
-        autoWidth:true,
+        autoWidth:false,
         loop:true,
         onSliderLoad: function() {
             $('#autoWidth').removeClass('cS-hidden');

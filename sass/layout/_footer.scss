@@ -1,18 +1,22 @@
 .footer{
     margin:o;
     background-color: $color-grey-3;
-    padding: 10rem 0;
+    // padding: 10rem 0;
     color: $color-grey-1;
     font-size: 1.5rem;
+    // padding-bottom: 10rem;
 
     @include respond(tab-port) {
-        padding: 8rem 0;
+        // padding: 8rem 0;
     }
     
 
     &__logo-box{
         text-align: center;
         margin-bottom: 8rem;
+        padding: 10rem;
+        width: 100%;     
+        height: auto;
     }
 
     &__logo{
@@ -77,4 +81,106 @@
             float: none;
         }
     }
+
+    .footer-grid {
+        background-color: #222;
+        display: grid;
+        // grid-template-columns: 1fr 2fr;
+        grid-template-areas: 'cont form';
+
+        @include respond(phone-port){
+                grid-template-areas: 'cont'
+                                     'form';
+        }
+
+        & .book__form {
+            grid-area: cont;
+            border-right: 1px solid #333;
+
+            & .form {
+                @include respond(tab-port){
+                    overflow-x: hidden;
+                }
+            }
+        }
+
+        & .contact-info {
+            font-family: "lato",sans-sarif;
+            display:grid;
+            justify-items: center;
+            align-items: center;
+            grid-area: form;
+            padding: 6rem 3rem 0 3rem;
+
+            @include respond(tab-port){
+                padding: 6rem 3rem 6rem 3rem;
+            }
+            
+            @include respond(phone){
+                padding: 5rem 3rem 6rem 1rem;
+            }
+
+            & .book__heading {
+                width: 100%;
+            }
+        }
+
+        & .contact-details-item {
+            display: flex;
+            // justify-content: center;
+            gap: 2rem;
+            align-items: center;
+            letter-spacing: 5px;
+
+            @include respond(phone){
+                letter-spacing: 2px;
+            }
+
+            & i {
+                font-size: 16px;
+            }
+            
+
+            & h3 {
+                transition: all .3s;
+
+                &:hover {
+                    background-color: rgb(255, 255, 255);
+                    color: #3b5999
+                }
+            }
+        }
+    }
+
+    .footer-social {
+       display: grid;
+       grid-template-columns: repeat(5,1fr);
+       justify-items: center;
+
+        & a {
+            color: #fff;
+            font-size: 2rem;
+            transition: all .3s;
+            width: 50%;
+            text-align: center;
+        }
+        .fbk:hover {
+            color: #3b5999;
+        }
+        .insta:hover {
+            color: #e4405f;
+        }
+        .twitter:hover {
+            color: #55acee;
+        }
+        .gmail:hover {
+            background: linear-gradient(45deg, #8e36e0 0%, #164b92 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .whatsapp:hover {
+            color: #25D366;
+        }
+    }
+
 }

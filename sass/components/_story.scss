@@ -94,7 +94,7 @@
     @include respond(phone) {
         transform: skew(0deg); 
         margin-left: -5.5rem;
-        padding-left: 3rem;
+        padding-left: 5rem;
         &__text{
             transform: skewX(0deg);
         }

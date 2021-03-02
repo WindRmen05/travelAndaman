@@ -39,7 +39,7 @@ var footer = {
 
 sr.reveal(".story", left);
 sr.reveal(".heading-secondary", right);
-sr.reveal(".col-1-of-4", bottom);
+sr.reveal(".col-1-of-3", bottom);
 sr.reveal(".form__group", left);
 sr.reveal(".footer__item", footer);
 sr.reveal(".header__logo", footer);
