@@ -17,16 +17,18 @@
     &__input{
         margin-bottom: 10px;
         font-family: inherit;
-        color: inherit;
+        color: #222;
         font-size: 1.5rem;
         padding: 1.5rem 2rem;
-        border-radius: 2px;
+        border-radius: 10px;
         background-color: rgba($color-white, 50%);
         border: none;
         border-bottom: 3px solid transparent;
         width: 70%;
         display: block;
         transition: all .3s;
+        // box-shadow: 0 1rem 2rem rgab($color-black, .1);
+        // border-bottom: 3px solid $color-teritiary-dark;
 
         @include respond(tab-port) {
             width: 100%;
@@ -40,6 +42,7 @@
         }
 
         &:focus:invalid{
+            outline:none;
             border-bottom: 3px solid $color-secondary-dark;
         }
 
@@ -84,7 +87,7 @@
     }
 
     &__radio-label{
-        color: #fff;
+        color: #333;
         font-size: 1.8rem;
         cursor: pointer;
         position: relative;
@@ -94,7 +97,7 @@
     &__radio-button{
         height: 1.8rem;
         width: 1.8rem;
-        border: .5rem solid $color-primary;
+        border: .5rem solid #333;
         border-radius: 50%;
         display:inline-block;
         position: absolute;
@@ -106,12 +109,12 @@
             height: 1.3rem;
             width: 1.3rem;
             display: block;
-            border-radius: 50%;
+            border-radius: 90%;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: $color-primary;
+            background-color: #333;
             opacity: 0;
             transition: opacity .2s;
         }

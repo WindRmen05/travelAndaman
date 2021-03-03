@@ -1,6 +1,6 @@
 .footer{
     margin:o;
-    background-color: $color-grey-3;
+    background-color: darkslategrey;
     // padding: 10rem 0;
     color: $color-grey-1;
     font-size: 1.5rem;
@@ -83,7 +83,7 @@
     }
 
     .footer-grid {
-        background-color: $color-grey-3;
+        // background-color: $color-grey-3;
         display: grid;
         // grid-template-columns: 1fr 2fr;
         grid-template-areas: 'cont form';
@@ -96,6 +96,7 @@
         & .book__form {
             grid-area: cont;
             border-right: 1px solid #333;
+            margin: 4rem;
 
             & .form {
                 @include respond(tab-port){
