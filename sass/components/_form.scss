@@ -1,5 +1,5 @@
 .form{
-
+overflow: hidden;
     &__group {
         display: flex;
         gap: 2rem;
@@ -27,8 +27,8 @@
         width: 70%;
         display: block;
         transition: all .3s;
-        // box-shadow: 0 1rem 2rem rgab($color-black, .1);
-        // border-bottom: 3px solid $color-teritiary-dark;
+        box-shadow: 0 1rem 2rem rgab($color-black, .1);
+        border-bottom: 3px solid #0c6388;
 
         @include respond(tab-port) {
             width: 100%;
@@ -38,13 +38,13 @@
         &:focus{
             outline: none;
             box-shadow: 0 1rem 2rem rgab($color-black, .1);
-            border-bottom: 3px solid $color-teritiary-dark;
+            border-bottom: 3px solid #0c6388;
         }
 
-        &:focus:invalid{
-            outline:none;
-            border-bottom: 3px solid $color-secondary-dark;
-        }
+        // &:focus:invalid{
+        //     outline:none;
+        //     border-bottom: 3px solid $color-secondary-dark;
+        // }
 
         
         &::-webkit-input-placeholder{
@@ -126,5 +126,10 @@
 
     &__radio-input{
         display: none;
+    }
+
+    & .btn--green {
+        // margin-left: 30px;
+        width: 200px;
     }
 }

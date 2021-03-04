@@ -1,6 +1,7 @@
 .footer{
     margin:o;
-    background-color: darkslategrey;
+    background-image: linear-gradient(to right bottom,
+    cornflowerblue, #0c6388ab);
     // padding: 10rem 0;
     color: $color-grey-1;
     font-size: 1.5rem;
@@ -95,8 +96,8 @@
 
         & .book__form {
             grid-area: cont;
-            border-right: 1px solid #333;
             margin: 4rem;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
 
             & .form {
                 @include respond(tab-port){
@@ -132,6 +133,16 @@
             gap: 2rem;
             align-items: center;
             letter-spacing: 3px;
+            padding: 1rem;
+            border-radius: 3px;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.1);
+                background-image: linear-gradient(to right bottom,
+                rgba(100, 148, 237, 0.158), #0c63885d);
+                box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            }
 
             @include respond(phone){
                 letter-spacing: 2px;
@@ -144,11 +155,6 @@
 
             & h3 {
                 transition: all .3s;
-
-                &:hover {
-                    background-color: rgb(255, 255, 255);
-                    color: #3b5999
-                }
             }
         }
     }
@@ -163,7 +169,16 @@
             font-size: 2rem;
             transition: all .3s;
             width: 50%;
+            height: min-content;
             text-align: center;
+
+            &:hover {
+                transform: scale(1.1);
+                background-image: linear-gradient(to right bottom,
+                rgba(100, 148, 237, 0.623), #0c6388ab);
+                box-shadow: 0 1rem 2rem rgba($color-black, .4);
+                border-radius: 2%;
+            }
         }
         .fbk:hover {
             color: #3b5999;

@@ -1,11 +1,20 @@
 .header{
     height: 95vh;
     background-image: linear-gradient(to right bottom,
-    rgba(0, 117, 45, 0.801), rgba(236, 255, 244, 0.055)),
-    url(/img/travel-andaman1/1.jpg);
+    #1797ce8c, #0c638800),url(../../img/nat-11.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
+
+    // &__background {
+    //     z-index: -10;
+    //     position: fixed;
+
+    //     & img {
+    //         width: 100%;
+    //         height: auto;
+    //     }
+    // }
 
 
     // -webkit-clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
@@ -26,14 +35,26 @@
     
     &__logo-box{
         z-index:99999;
-        position:absolute;
+        position: fixed;
+        width: min-content;
+        // background-color: #ffffff;
+        // position:absolute;
         top: 4rem;
         left: 4rem;
+
+        @media only screen and (max-width: 900px) {
+            top: 3rem;
+            left: 2rem;
+        }
     }
 
     &__logo{
         height:auto;
-        width: 10%;
+        width: 80px;
+
+        @media only screen and (max-width: 900px) {
+            width: 60px;
+        }
     }
     
     &__text-box{

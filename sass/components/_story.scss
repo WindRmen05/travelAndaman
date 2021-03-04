@@ -1,11 +1,10 @@
 .story{
-    width:60%;
+    width:min-content;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
     background-color: rgba($color-white, .6);
-    border-radius: 3px;
-    padding: 6rem;
-    padding-left: 9rem;
+    border-radius: 2%;
+    padding: 3rem 4rem;
     font-size: $default-font-size;
     // transform: skewX(-12deg);
     align-items: center;
@@ -76,25 +75,24 @@
         filter: blur(3px) brightness(80%);
     }
 
-    @media only screen and (max-width: 1300px) {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        align-items: center;
-    }
+    // @media only screen and (max-width: 1300px) {
+    //     display: flex;
+    //     flex-direction: column;
+    //     // width: 60%;
+    //     align-items: center;
+    // }
 
     @include respond(tab-port) {
-        width: 100%;
-        margin-left: -5.5rem;
-        padding: 6rem ;
-        padding-left: 7rem;
+        // width: min-content;
+        // margin-left: -5.5rem;
+        padding: 3rem ;
 
     }
 
     @include respond(phone) {
         transform: skew(0deg); 
-        margin-left: -5.5rem;
-        padding-left: 5rem;
+        // margin-left: -5.5rem;
+        // padding-left: 5rem;
         &__text{
             transform: skewX(0deg);
         }
