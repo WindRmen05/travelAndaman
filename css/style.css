@@ -955,7 +955,7 @@ body {
   .navigation__checkbox {
     display: none; }
   .navigation__button {
-    background-color: transparent;
+    background-color: #fff;
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
@@ -1017,8 +1017,6 @@ body {
     background-position: 100%;
     color: #1797ce;
     transform: translateX(1rem); }
-  .navigation__checkbox:checked ~ .navigation__button {
-    background-color: #fff; }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%; }

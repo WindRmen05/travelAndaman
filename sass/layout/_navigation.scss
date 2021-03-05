@@ -6,7 +6,7 @@
     }
 
     &__button{
-        background-color: transparent;
+        background-color: #fff;
         height: 7rem;
         width: 7rem;
         border-radius: 50%;
@@ -114,10 +114,6 @@
             color: $color-primary;
             transform: translateX(1rem);
         }
-    }
-    
-    &__checkbox:checked ~ &__button{
-        background-color: #fff;
     }
 
     // &__checkbox:checked ~ &__background{
