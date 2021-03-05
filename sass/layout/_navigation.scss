@@ -113,6 +113,10 @@
             background-position: 100%;
             color: $color-primary;
             transform: translateX(1rem);
+
+            @include respond(phone){
+                transform: translateX(0rem);
+            }
         }
     }
 

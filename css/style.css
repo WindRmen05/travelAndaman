@@ -1017,6 +1017,9 @@ body {
     background-position: 100%;
     color: #1797ce;
     transform: translateX(1rem); }
+    @media (max-width: 37.5em) {
+      .navigation__link:hover, .navigation__link:active {
+        transform: translateX(0rem); } }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%; }
