@@ -21,9 +21,11 @@ button.addEventListener('click',(e) => {
 const navButton = document.querySelectorAll('.navigation__link');
 const navIcon = document.querySelector('.navigation__icon');
 const navCheckbox = document.querySelector('input[type="checkbox"]');
+const navBtn = document.querySelector('.navigation__button');
 
     navButton.forEach((el) => {
         el.addEventListener('click',(e) => {
             navCheckbox.checked = false;
         })
     });
+
