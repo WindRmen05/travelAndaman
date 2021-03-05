@@ -61,7 +61,7 @@
         height: 100%;
         position: fixed;
         top:0;
-        right: 0;
+        left: 0;
         z-index: 1500;
 
         opacity: 0;
@@ -115,7 +115,7 @@
             transform: translateX(1rem);
 
             @include respond(phone){
-                transform: translateX(0rem);
+                background-position: 0%;
             }
         }
     }

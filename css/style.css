@@ -982,7 +982,7 @@ body {
     height: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 1500;
     opacity: 0;
     width: 0;
@@ -1019,7 +1019,7 @@ body {
     transform: translateX(1rem); }
     @media (max-width: 37.5em) {
       .navigation__link:hover, .navigation__link:active {
-        transform: translateX(0rem); } }
+        background-position: 0%; } }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%; }
