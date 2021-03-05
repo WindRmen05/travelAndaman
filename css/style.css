@@ -637,7 +637,7 @@ body {
     border-bottom: 3px solid #0c6388; }
     @media (max-width: 56.25em) {
       .form__input {
-        width: 100%;
+        width: 70%;
         font-size: 1.7rem; } }
     .form__input:focus {
       outline: none;
@@ -937,6 +937,17 @@ body {
       -webkit-text-fill-color: transparent; }
     .footer .footer-social .whatsapp:hover {
       color: #25D366; }
+  .footer__copyright {
+    color: #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    padding: 2rem;
+    float: right;
+    width: 85%;
+    text-transform: uppercase; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 .navigation {
   overflow-x: hidden; }

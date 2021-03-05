@@ -43,7 +43,7 @@ overflow: hidden;
         border-bottom: 3px solid #0c6388;
 
         @include respond(tab-port) {
-            width: 100%;
+            width: 70%;
             font-size: 1.7rem;
         }
 

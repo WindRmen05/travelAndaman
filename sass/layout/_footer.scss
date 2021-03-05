@@ -203,4 +203,18 @@
         }
     }
 
+    &__copyright{
+        color: $color-grey-1;
+        border-top: 1px solid $color-grey-1;
+        padding: 2rem;
+        float: right;
+        width: 85%;
+        text-transform: uppercase;
+
+        @include respond(tab-port){
+            width: 100%;
+            float: none;
+        }
+    }
+
 }
