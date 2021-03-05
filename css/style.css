@@ -18,7 +18,8 @@ tab-port
   margin: 0px;
   padding: 0px;
   box-sizing: inherit;
-  overflow-x: hidden !important; }
+  overflow-x: hidden !important;
+  scroll-behavior: smooth; }
 
 html {
   overflow-x: hidden !important;
