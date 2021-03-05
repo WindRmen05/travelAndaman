@@ -194,13 +194,13 @@ body {
 
 .section-features {
   z-index: 777;
-  padding: 20rem 0 10rem 0;
+  padding: 10rem 0 10rem 0;
   background-color: #ffffff;
   text-align: center;
   margin-top: -15vh; }
 
 .section-readme {
-  padding: 20rem 0 10em 0;
+  padding: 10rem 0 10em 0;
   display: grid;
   grid-template-rows: min-content 2fr;
   justify-content: center;
@@ -221,7 +221,6 @@ body {
     display: inline; }
 
 .section-gallery {
-  padding: 20rem 0 10rem 0;
   background-color: #ffffff;
   text-align: center; }
   .section-gallery .gallery__box img {
@@ -242,7 +241,7 @@ body {
       width: 40rem; }
 
 .section-stories {
-  padding: 15rem 0;
+  padding-top: 15rem;
   position: relative; }
   .section-stories .customer_reviews {
     display: flex;
@@ -609,6 +608,16 @@ body {
       .form__group {
         flex-direction: column;
         gap: 0rem; } }
+    .form__group textarea {
+      font-family: inherit;
+      color: #222;
+      font-size: 1.5rem;
+      width: 70%;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 0 1rem 2rem rgab(#000, 0.1);
+      border: 3px solid #0c6388;
+      padding: 1.5rem 2rem; }
   .form__group:not(:last-child) {
     margin-bottom: 3rem; }
   .form__input {

@@ -16,3 +16,14 @@ button.addEventListener('click',(e) => {
     }
 })
 // console.log(button[0].textContent);
+
+// navigation button click event
+const navButton = document.querySelectorAll('.navigation__link');
+const navIcon = document.querySelector('.navigation__icon');
+const navCheckbox = document.querySelector('input[type="checkbox"]');
+
+    navButton.forEach((el) => {
+        el.addEventListener('click',(e) => {
+            navCheckbox.checked = false;
+        })
+    });

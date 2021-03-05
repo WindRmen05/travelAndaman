@@ -35,19 +35,19 @@
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> HOME</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> ABOUT ANDAMAN</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> GALLERY</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> CONTACT US</a></li>
+                <li class="navigation__item"><a href="#header" class="navigation__link"><span>01</span> HOME</a></li>
+                <li class="navigation__item"><a href="#aboutus" class="navigation__link"><span>02</span> ABOUT ANDAMAN</a></li>
+                <li class="navigation__item"><a href="#gallery" class="navigation__link"><span>03</span> GALLERY</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link"><span>04</span> CONTACT US</a></li>
             </ul>
         </nav>
     </div>
-    <header class="header">
+    <header class="header" id="header">
         <div id="whatsapp">
             <a href="https://wa.link/81v0ze"><img src="./img/whatsapp.svg" alt="" id="whatsapp-img"></a>
         </div>
         <div class="header__logo-box">
-            <img src="img/logo icon-01.png" alt="logo" class="header__logo">
+            <a href="#header"><img src="img/logo icon-01.png" alt="logo" class="header__logo"></a>
         </div>
         <div class="header__background">
             <img src="img/nat-11.jpg" alt="logo" class="header__logo">
@@ -58,7 +58,7 @@
                 <span class="heading-primary--sub">Enjoy Your trip With Us </span>
             </h1>
 
-            <a href="#section-tours" class="btn btn--white btn--animated">discover our tours</a>
+            <a href="#aboutus" class="btn btn--white btn--animated">explore more &rarr;</a>
         </div>
 
     </header>
@@ -115,7 +115,7 @@
                 </div>
             </section> -->
 
-            <section class="section-readme">
+            <section class="section-readme" id="aboutus">
                 <div class="u-center-text">
                     <h2 class="heading-secondary">
                         About Us
@@ -197,7 +197,7 @@
             </div>
         </section>
 
-        <section class="section-gallery">
+        <section class="section-gallery" id="gallery">
             <div class="u-center-text u-margin-bottom-medium">
                 <h2 class="heading-secondary">
                     Travel Gallery
@@ -704,13 +704,16 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="footer-grid">
             <div class="contact-info">
                 <div class="contact-details">
                     <div class="contact-details-item">
                         <i class="fas fa-phone-alt"></i>
                         <h3>+91 7085623023</h3>
+                    </div>
+                    <div class="contact-details-item">
+                        <i class="fas fa-phone-alt"></i>
                         <h3>+91 9531991983</h3>
                     </div>
                     <div class="contact-details-item">
@@ -742,7 +745,12 @@
                         <input type="email" class="form__input" placeholder="E-mail address" id="email" required>
                         <!-- <label for="email" class="form__label">Email address</label> -->
                     </div>
-                    <div class="form__group u-margin-bottom-medium">
+                    
+                    <div class="form__group u-margin-bottom-small">
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <!-- <label for="email" class="form__label">Email address</label> -->
+                    </div>
+                    <!-- <div class="form__group u-margin-bottom-medium">
                         <div class="form__radio-group">
                             <input type="radio" class="form__radio-input" id="small" name="size">
                             <label for="small" class="form__radio-label">
@@ -758,7 +766,7 @@
                                 Large tour group
                             </label>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form__group">
                         <button class="btn btn--green u-center-text u-margin-bottom-medium u-margin-top-small">

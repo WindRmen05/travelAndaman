@@ -104,6 +104,10 @@
                     overflow-x: hidden;
                 }
             }
+
+            & .btn--green {
+                // z-index: 9900;
+            }
         }
 
         & .contact-info {
