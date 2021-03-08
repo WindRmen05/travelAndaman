@@ -923,6 +923,15 @@ body {
       @media (max-width: 56.25em) {
         .footer .footer-grid .book__form .form {
           overflow-x: hidden; } }
+      .footer .footer-grid .book__form .btn--green {
+        margin-left: 40px; }
+        @media only screen and (max-width: 1000px) {
+          .footer .footer-grid .book__form .btn--green {
+            width: 180px;
+            margin-left: 15px; } }
+        @media only screen and (max-width: 600px) {
+          .footer .footer-grid .book__form .btn--green {
+            width: 150px; } }
     .footer .footer-grid .contact-info {
       font-family: "lato",sans-sarif;
       display: grid;
