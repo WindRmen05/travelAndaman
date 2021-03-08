@@ -30,14 +30,17 @@ const navBtn = document.querySelector('.navigation__button');
     });
 
 // trip plans
-const slideButton = document.querySelectorAll('.tripPlan-box__slidedown-button');
+const slideButton = document.querySelectorAll('.tripPlan-box__slidedown');
 const planItems = document.querySelector('.tripPlan-box__items');
 
 slideButton.forEach((el) => {
     el.addEventListener('click',(e) => {
-        if(e.target.alt == "imgbtn") {
+        if(e.target.id == "imgbtn") {
+            e.target.parentElement.children[1].classList.toggle('more');
+            // console.log(e.target.parentElement.children[1].classList.toggle('more'))
+        }else if(e.target.alt == 'imgbtn') {
             e.target.parentElement.parentElement.parentElement.children[1].classList.toggle('more');
-            // console.log(e.target.alt)
+            // console.log(e.target.parentElement.parentElement.parentElement.children[1].classList.toggle('more'))
         }
     })
 });
