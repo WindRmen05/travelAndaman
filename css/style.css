@@ -955,6 +955,8 @@ body {
       padding: 1rem;
       border-radius: 3px;
       transition: all .3s; }
+      .footer .footer-grid .contact-details-item:last-child h3 {
+        max-width: 300px; }
       .footer .footer-grid .contact-details-item:hover {
         transform: scale(1.1);
         background-image: linear-gradient(to right bottom, rgba(100, 148, 237, 0.158), #0c63885d);
