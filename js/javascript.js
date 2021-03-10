@@ -37,10 +37,22 @@ slideButton.forEach((el) => {
     el.addEventListener('click',(e) => {
         if(e.target.id == "imgbtn") {
             e.target.parentElement.children[1].classList.toggle('more');
+            e.target.children[1].classList.toggle('upsidedown')
             // console.log(e.target.parentElement.children[1].classList.toggle('more'))
+            // console.log(e.target.children[1].classList.toggle('upsidedown'));
         }else if(e.target.alt == 'imgbtn') {
             e.target.parentElement.parentElement.parentElement.children[1].classList.toggle('more');
+            e.target.classList.toggle('upsidedown')
             // console.log(e.target.parentElement.parentElement.parentElement.children[1].classList.toggle('more'))
         }
     })
 });
+
+//image move on mousemove
+// const img = document.querySelector('#pop-img');
+
+// $(slideButton).mousemove((e) => {
+//     var x = (e.pageX), y = (e.pageY);
+//   	$(img).css({'left': x - 20,'top': y -20});
+//       console.log(x,y)
+// });

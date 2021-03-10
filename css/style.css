@@ -76,6 +76,14 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes bounce {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -179,20 +187,6 @@ body {
   .paragraph:last-child {
     margin-bottom: 0rem; }
 
-.section-about {
-  background-color: #e6e6e6;
-  padding: 25rem 15rem 25rem 15rem;
-  margin-top: -25vh;
-  background-image: url(img\nat-1-large.jpg); }
-  .section-about .about_text {
-    width: 100%;
-    z-index: 2; }
-    @media (max-width: 75em) {
-      .section-about .about_text {
-        width: 100%; } }
-  .section-about .about_styling {
-    display: flex; }
-
 .section-features {
   z-index: 777;
   padding: 10rem 0 10rem 0;
@@ -207,6 +201,7 @@ body {
   justify-content: center;
   align-items: center; }
   .section-readme #section-readme {
+    font-size: 18px;
     max-width: 700px;
     height: auto;
     word-wrap: break-word;
@@ -247,7 +242,8 @@ body {
       .section-tripPlan .tripPlan-box {
         box-shadow: 0 0 0 transparent; } }
     .section-tripPlan .tripPlan-box h2 {
-      color: #444; }
+      color: #444;
+      text-align: center; }
     .section-tripPlan .tripPlan-box__slidedown {
       padding: 0 1rem;
       display: flex;
@@ -265,8 +261,8 @@ body {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-      .section-tripPlan .tripPlan-box__slidedown:hover > .tripPlan-box__slidedown-button {
-        transform: translateY(10px); }
+      .section-tripPlan .tripPlan-box__slidedown:hover > #pop-img {
+        visibility: visible; }
     .section-tripPlan .tripPlan-box__items {
       width: 100%;
       height: 0px;
@@ -275,6 +271,9 @@ body {
 
 .more {
   height: max-content !important; }
+
+.upsidedown {
+  transform: rotateX(180deg); }
 
 .section-tours {
   background-color: #ffffff;
@@ -745,8 +744,6 @@ body {
     opacity: 1; }
   .form__radio-input {
     display: none; }
-  .form .btn--green {
-    width: 200px; }
 
 .header {
   height: 95vh;
@@ -955,6 +952,9 @@ body {
       padding: 1rem;
       border-radius: 3px;
       transition: all .3s; }
+      .footer .footer-grid .contact-details-item a {
+        text-decoration: none;
+        color: inherit; }
       .footer .footer-grid .contact-details-item:last-child h3 {
         max-width: 300px; }
       .footer .footer-grid .contact-details-item:hover {
@@ -965,7 +965,7 @@ body {
         .footer .footer-grid .contact-details-item {
           letter-spacing: 2px; } }
       .footer .footer-grid .contact-details-item i {
-        font-size: 16px; }
+        font-size: 17px; }
       .footer .footer-grid .contact-details-item h3 {
         transition: all .3s; }
   .footer .footer-social {
