@@ -7,12 +7,12 @@ button.addEventListener('click',(e) => {
     moretext.classList.toggle('moretext');
     if (button.textContent.includes('Read More')) {
         button.textContent='Read less';
-        setTimeout(() => {
-            spanColor.style.background = 'transparent';
-        },2000);
+        // setTimeout(() => {
+        //     spanColor.style.background = 'transparent';
+        // },2000);
     } else {
         button.textContent='Read More';
-        spanColor.style.background = 'antiquewhite';
+        // spanColor.style.background = 'antiquewhite';
     }
 })
 // console.log(button[0].textContent);

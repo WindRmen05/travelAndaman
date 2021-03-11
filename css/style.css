@@ -211,8 +211,6 @@ body {
         padding: 3rem; } }
   .section-readme .moretext {
     display: none; }
-  .section-readme .span-color {
-    background: antiquewhite; }
   .section-readme .text.showmore .moretext {
     display: inline; }
 
