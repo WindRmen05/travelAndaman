@@ -267,12 +267,12 @@
     &__form{
         // width: 100%;
         background: #fff;
-        padding: 6rem 3rem 6rem 6rem ;
+        padding: 6rem 3rem 6rem 3rem ;
         border-radius: 1%;
 
-        @include respond(phone){
-            padding: 6rem 3rem 6rem 3rem ;
-        }
+        // @include respond(phone){
+        //     padding: 6rem 3rem 6rem 3rem ;
+        // }
     }
 
     &__heading{

@@ -13,12 +13,16 @@ overflow: hidden;
             font-family: inherit;
             color: #222;
             font-size: 1.5rem;
-            width: 70%;
+            width: 86%;
             height: 200px;
             border-radius: 10px;
             box-shadow: 0 1rem 2rem rgab($color-black, .1);
             border: 3px solid #0c6388;
             padding: 1.5rem 2rem;
+
+            @media only screen and (max-width:398px) {
+                width: 80%;
+            }
         }
     }
 
@@ -36,14 +40,17 @@ overflow: hidden;
         background-color: rgba($color-white, 50%);
         border: none;
         border-bottom: 3px solid transparent;
-        width: 70%;
+        width: 86%;
         display: block;
         transition: all .3s;
         box-shadow: 0 1rem 2rem rgab($color-black, .1);
         border-bottom: 3px solid #0c6388;
 
+        & option {
+           font-family: "lato",sans-serif; 
+        }
+
         @include respond(tab-port) {
-            width: 70%;
             font-size: 1.7rem;
         }
 
@@ -62,6 +69,10 @@ overflow: hidden;
         &::-webkit-input-placeholder{
             color: $color-grey;
         }
+
+        // @media only screen and (max-width:398px) {
+        //     width: 80%;
+        // }
     }
 
     

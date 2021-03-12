@@ -315,11 +315,8 @@ body {
       background-image: url(../img/nat-10.jpg); } }
   .book__form {
     background: #fff;
-    padding: 6rem 3rem 6rem 6rem;
+    padding: 6rem 3rem 6rem 3rem;
     border-radius: 1%; }
-    @media (max-width: 37.5em) {
-      .book__form {
-        padding: 6rem 3rem 6rem 3rem; } }
   .book__heading {
     width: 100%;
     margin-top: -3rem; }
@@ -581,8 +578,7 @@ body {
 .story {
   width: min-content;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #f3f3f3;
   border-radius: 2%;
   padding: 3rem 4rem;
   font-size: 1.6rem;
@@ -596,6 +592,8 @@ body {
     position: relative; }
   .story__image {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     transition: all .5s; }
   .story__text h3 {
     text-align: center; }
@@ -613,11 +611,15 @@ body {
     opacity: 0;
     transition: all .5s;
     backface-visibility: hidden; }
+  .story .testimony-text {
+    height: 100px;
+    overflow: hidden; }
+  .story .testimony-button {
+    padding: 1rem 3rem; }
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__image {
-    transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
   @media (max-width: 56.25em) {
     .story {
@@ -657,12 +659,15 @@ body {
       font-family: inherit;
       color: #222;
       font-size: 1.5rem;
-      width: 70%;
+      width: 86%;
       height: 200px;
       border-radius: 10px;
       box-shadow: 0 1rem 2rem rgab(#000, 0.1);
       border: 3px solid #0c6388;
       padding: 1.5rem 2rem; }
+      @media only screen and (max-width: 398px) {
+        .form__group textarea {
+          width: 80%; } }
   .form__group:not(:last-child) {
     margin-bottom: 3rem; }
   .form__input {
@@ -675,14 +680,15 @@ body {
     background-color: white;
     border: none;
     border-bottom: 3px solid transparent;
-    width: 70%;
+    width: 86%;
     display: block;
     transition: all .3s;
     box-shadow: 0 1rem 2rem rgab(#000, 0.1);
     border-bottom: 3px solid #0c6388; }
+    .form__input option {
+      font-family: "lato",sans-serif; }
     @media (max-width: 56.25em) {
       .form__input {
-        width: 70%;
         font-size: 1.7rem; } }
     .form__input:focus {
       outline: none;
@@ -784,14 +790,12 @@ body {
       background-image: linear-gradient(to right bottom, rgba(0, 117, 45, 0.801), rgba(236, 255, 244, 0.801)), url(/img/travel-andaman1/1.jpg); } }
   .header__logo-box {
     z-index: 99999;
-    position: fixed;
+    position: absolute;
     width: min-content;
-    top: 4rem;
-    left: 4rem; }
+    top: -2rem; }
     @media only screen and (max-width: 900px) {
       .header__logo-box {
-        top: 3rem;
-        left: 2rem; } }
+        top: -2rem; } }
   .header__logo {
     height: auto;
     width: 80px; }
@@ -907,10 +911,10 @@ body {
         float: none; } }
   .footer .footer-grid {
     display: grid;
-    grid-template-areas: 'cont form'; }
+    grid-template-areas: 'cont form' 'copy copy'; }
     @media (max-width: 50em) {
       .footer .footer-grid {
-        grid-template-areas: 'cont' 'form'; } }
+        grid-template-areas: 'cont' 'form' 'copy'; } }
     .footer .footer-grid .book__form {
       grid-area: cont;
       margin: 4rem;
@@ -927,6 +931,9 @@ body {
         @media only screen and (max-width: 600px) {
           .footer .footer-grid .book__form .btn--green {
             width: 150px; } }
+      @media only screen and (max-width: 398px) {
+        .footer .footer-grid .book__form {
+          margin: 0px; } }
     .footer .footer-grid .contact-info {
       font-family: "lato",sans-sarif;
       display: grid;
@@ -967,15 +974,13 @@ body {
       .footer .footer-grid .contact-details-item h3 {
         transition: all .3s; }
   .footer .footer-social {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center; }
+    display: flex;
+    gap: 10px; }
     .footer .footer-social a {
       color: #fff;
       font-size: 2rem;
       transition: all .3s;
-      width: 50%;
-      height: min-content;
+      width: 80px;
       text-align: center; }
       .footer .footer-social a:hover {
         transform: scale(1.1);
@@ -995,6 +1000,7 @@ body {
     .footer .footer-social .whatsapp:hover {
       color: #25D366; }
   .footer__copyright {
+    grid-area: copy;
     color: #e6e6e6;
     border-top: 1px solid #e6e6e6;
     padding: 2rem;

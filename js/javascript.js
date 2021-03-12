@@ -56,3 +56,26 @@ slideButton.forEach((el) => {
 //   	$(img).css({'left': x - 20,'top': y -20});
 //       console.log(x,y)
 // });
+
+//input validation for numbers
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 32 && (charCode < 63))
+        return false;
+    return true;
+}
+
+const testimonyBtn = document.querySelectorAll('.testimony-button');
+testimonyBtn.forEach((el) => {
+    el.addEventListener('click',(e) => {
+        if(e.target.parentElement.children[1]) {
+            e.target.parentElement.children[1].classList.toggle('more');
+        }
+        // console.log(e.target.parentElement.children[1]);
+    })
+});
+
+
+// nodejs
+// const nodemailer = require('nodemailer');
+

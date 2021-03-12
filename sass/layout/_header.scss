@@ -73,16 +73,17 @@
     
     &__logo-box{
         z-index:99999;
-        position: fixed;
+        position: absolute;
         width: min-content;
         // background-color: #ffffff;
         // position:absolute;
-        top: 4rem;
-        left: 4rem;
+        top: -2rem;
+        // left: 4rem;
+        // top: 4rem;
+        // left: 4rem;
 
         @media only screen and (max-width: 900px) {
-            top: 3rem;
-            left: 2rem;
+            top: -2rem;
         }
     }
 
