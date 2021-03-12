@@ -1025,7 +1025,7 @@
                     </div>
 
                 </div>
-                <form action="#" class="form">
+                <form method="POST" action="https://script.google.com/macros/s/AKfycbwXOwns-RMI3-tpbbqY2zEcMrjLbOyDuNU2rjkHwWky_cDxzS_jEOH074e8ugUI6AjFIg/exec" id="submit-form" class="form">
                     <div class="form__group u-margin-bottom-small">
                         <input type="text" class="form__input" placeholder="Full-name" id="name" onkeypress="return isNumberKey(event)" required>
                         <!-- <label for="name" class="form__label">Full name</label> -->
@@ -1068,9 +1068,9 @@
                     </div> -->
 
                     <div class="form__group">
-                        <button class="btn btn--green u-center-text u-margin-bottom-medium u-margin-top-small">
+                        <input type="submit" class="btn btn--green u-center-text u-margin-bottom-medium u-margin-top-small">
                             next step &rarr;
-                        </button>
+                        </input>
                     </div>
                 </form>
             </div>
@@ -1169,6 +1169,25 @@
             </div>
         </section>
     -->
+    <!-- <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwXOwns-RMI3-tpbbqY2zEcMrjLbOyDuNU2rjkHwWky_cDxzS_jEOH074e8ugUI6AjFIg/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script> -->
 </body>
 <script>
     var $root = $('html, body');
