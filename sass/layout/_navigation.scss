@@ -6,12 +6,12 @@
     }
 
     &__button{
-        background-color: #fff;
+        background-color: #ffffff;
         height: 7rem;
         width: 7rem;
         border-radius: 50%;
         position: fixed;
-        top:6rem;
+        top:4rem;
         right: 6rem;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -141,7 +141,7 @@
         &::after{
             width: 3rem;
             height:2px;
-            background-color: $color-black;
+            background-color: rgb(0, 0, 0);
             display: inline-block;
         }
 
@@ -183,5 +183,47 @@
     &__checkbox:checked + &__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
+    }
+}
+
+.nav-menu {
+    // background-color: #fff;
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    // height: 136px;
+    // width: 100%;
+    // z-index:999;
+    // box-shadow: 0 1rem 3rem rgba($color-black, .1);
+
+    &__logo-box{
+        z-index:99999;
+        position: absolute;
+        width: min-content;
+        // background-color: #ffffff;
+        // padding: 1rem;
+        border-radius: 3px;
+        position:fixed;
+        top: 3rem;
+        left: 4rem;
+        // top: 4rem;
+        // left: 4rem;
+
+        // @media only screen and (max-width: 900px) {
+        //     top: -2rem;
+        // }
+    }
+
+    &__logo{
+        height:auto;
+        width: 80px;
+        // background: #0c6388;
+        border-radius: 50%;
+        padding: 1rem;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+
+        @media only screen and (max-width: 900px) {
+            width: 60px;
+        }
     }
 }

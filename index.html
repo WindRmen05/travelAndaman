@@ -27,31 +27,35 @@
 
 <body>
 
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#header" class="navigation__link">HOME</a></li>
-                <li class="navigation__item"><a href="#aboutus" class="navigation__link">ABOUT US</a></li>
-                <li class="navigation__item"><a href="#gallery" class="navigation__link">GALLERY</a></li>
-                <li class="navigation__item"><a href="#contact" class="navigation__link">CONTACT US</a></li>
-            </ul>
-        </nav>
+    <div class="nav-menu">
+        <div class="nav-menu__logo-box">
+            <a href="#header"><img src="img/logo icon-01.png" alt="logo" class="nav-menu__logo"></a>
+        </div>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+    
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#header" class="navigation__link">HOME</a></li>
+                    <li class="navigation__item"><a href="#aboutus" class="navigation__link">ABOUT US</a></li>
+                    <li class="navigation__item"><a href="#gallery" class="navigation__link">GALLERY</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
+    
     <header class="header" id="header">
         <div id="whatsapp">
             <a href="https://wa.link/81v0ze"><img src="./img/travel-attraction/whatsapp.svg" alt="" id="whatsapp-img"></a>
         </div>
-        <div class="header__logo-box">
-            <a href="#header"><img src="img/logo icon-01.png" alt="logo" class="header__logo"></a>
-        </div>
         <div class="header__background">
-            <img src="img/nat-11.jpg" alt="logo" class="header__logo">
+            <img src="img/nat-4.jpg" alt="logo" class="header__logo">
         </div>
         <div class="header__text-box">
             <h1 class="heading-primary">
@@ -277,7 +281,7 @@
             <div class="tripPlan-wrap">
                 <div class="tripPlan-box">
                     <h2 class="heading-teritiary">South Andaman</h2>
-                    <p>Sandwiched between the turquoise sea and the green forests, the golden beaches of Havelock and its wealth of corals are a huge attraction in South Andamans.</p>
+                    <p>South Andaman Island, the major tourism hub with exotic-looking beaches, historical places, and much more adventure games.</p>
                     <div class="tripPlan-box__tripPlan-card">
                         <div class="tripPlan-box__slidedown u-margin-bottom-small" id="imgbtn">
                             <!-- <p>hover on text</p> -->
@@ -371,7 +375,7 @@
 
                 <div class="tripPlan-box">
                     <h2 class="heading-teritiary">North Andaman</h2>
-                    <p>Sandwiched between the turquoise sea and the green forests, the golden beaches of Havelock and its wealth of corals are a huge attraction in South Andamans.</p>
+                    <p>The aquamarine water, the rocky isles and sand bar, the virgin beaches makes North Andaman the one of the must-visit spectacular tourist spots.</p>
                     <div class="tripPlan-box__tripPlan-card">
                         <div class="tripPlan-box__slidedown u-margin-bottom-small" id="imgbtn">
                             <h4 class="heading-teritiary">Baratang</h4>
@@ -852,7 +856,7 @@
                             </figcaption>
                         </figure>
                         <div class="story__text">
-                            <h3 class="heading-teritiary u-margin-bottom-small">I had the best weekend .
+                            <h3 class="heading-teritiary u-margin-bottom-small">WOW! Awsome trip.
                             </h3>
                             <p class="testimony-text">Travel Andaman, it was really a wonderful experience for us. All your arrangements were more than our expectations. All the hotels and transportation arrangements you have done were excellent. Though we had faced some health problems in between, you people helped us very efficiently. Thanks for your care and prompt response.
                                 And special thanks to your diving team. They were just being very cooperative, polite, and friendly. Their diving skills were excellent and safe which gave us so much confidence during the course session. 
@@ -860,9 +864,7 @@
                                 Thanks & Regards,
                             </p>
                             <p class="highlite">- Hardip, Gujarat</p>
-                            <button class="btn btn--green u-margin-bottom-small u-margin-top-small testimony-button">
-                                more
-                            </button>
+                            <button id="testimonyBtn" class="btn btn--green u-margin-bottom-small u-margin-top-small testimony-button">more</button>
                         </div>
                     </div>
                 </div>
@@ -879,9 +881,7 @@
                             </h3>
                             <p class="testimony-text">Thank you very much for all your assistance with my safe trip to Andaman. Your divers and the diving course you have given were just awesome.  Thanks again.</p>
                             <p class="highlite">- Mary Smith</p>
-                                <button class="btn btn--green u-margin-bottom-small u-margin-top-small testimony-button">
-                                    more
-                                </button>
+                                <button id="testimonyBtn" class="btn btn--green u-margin-bottom-small u-margin-top-small testimony-button">more</button>
                         </div>
                     </div>
                 </div>
@@ -895,13 +895,11 @@
                             </figcaption>
                         </figure>
                         <div class="story__text">
-                            <h3 class="heading-teritiary u-margin-bottom-small">WOW! Awsome trip</h3>
+                            <h3 class="heading-teritiary u-margin-bottom-small">I had the best weekend</h3>
                             <p class="testimony-text">My family had a great and successful trip to Andaman with Travel Andaman last week. Everything went very well and I would like to pass on special THANKS to Mr.Shahid who was exceptionally humble on the whole tour. Thanks to all of you for your support, you people gave us a magical experience in exploring.
                                 We’ll definitely connect with you for future trips.</p>
                             <p class="highlite">- Jack Willson</p>
-                                <button class="btn btn--green u-margin-bottom-small u-margin-top-small testimony-button">
-                                    more
-                                </button>
+                                <button id="testimonyBtn" class="btn btn--green u-margin-bottom-small u-margin-top-small testimony-button">more</button>
                         </div>
                     </div>
                 </div>
@@ -1068,9 +1066,7 @@
                     </div> -->
 
                     <div class="form__group">
-                        <input type="submit" class="btn btn--green u-center-text u-margin-bottom-medium u-margin-top-small">
-                            next step &rarr;
-                        </input>
+                        <input type="submit" value="Submit" class="btn btn--green u-center-text u-margin-bottom-medium u-margin-top-small"></input>
                     </div>
                 </form>
             </div>

@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    // padding-top: 12rem;
 
     &__background {
         z-index: -10;
@@ -71,30 +72,7 @@
         // clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);
     }
     
-    &__logo-box{
-        z-index:99999;
-        position: absolute;
-        width: min-content;
-        // background-color: #ffffff;
-        // position:absolute;
-        top: -2rem;
-        // left: 4rem;
-        // top: 4rem;
-        // left: 4rem;
-
-        @media only screen and (max-width: 900px) {
-            top: -2rem;
-        }
-    }
-
-    &__logo{
-        height:auto;
-        width: 80px;
-
-        @media only screen and (max-width: 900px) {
-            width: 60px;
-        }
-    }
+    
     
     &__text-box{
         position: absolute;

@@ -75,6 +75,19 @@ testimonyBtn.forEach((el) => {
     })
 });
 
+const x = document.querySelectorAll('#testimonyBtn')
+
+x.forEach((el) => {
+    el.addEventListener('click',(e) => {
+        if(e.target.textContent == 'more') {
+            e.target.textContent = 'less';
+            // console.log(e.target)
+        } else {
+            e.target.textContent = 'more';
+        }
+    })
+});
+
 
 // nodejs
 // const nodemailer = require('nodemailer');
