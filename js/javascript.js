@@ -92,15 +92,11 @@ x.forEach((el) => {
 // nodejs
 // const nodemailer = require('nodemailer');
 
-// webapp url
-// url = https://script.google.com/macros/s/AKfycbwXOwns-RMI3-tpbbqY2zEcMrjLbOyDuNU2rjkHwWky_cDxzS_jEOH074e8ugUI6AjFIg/exec
-// id = AKfycbwXOwns-RMI3-tpbbqY2zEcMrjLbOyDuNU2rjkHwWky_cDxzS_jEOH074e8ugUI6AjFIg
-
 $(window).scroll(function() {
 	var $height = $(window).scrollTop();
   if($height > 715) {
-		$('#logo').css('background-color','#fff');
+      $('#logo').css('background-color','#fff');
 	} else {
-		$('#logo').css('background-color','transparent');
+        $('#logo').css('background-color','transparent');
 	}
 });

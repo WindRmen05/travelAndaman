@@ -1023,14 +1023,14 @@
                     </div>
 
                 </div>
-                <form method="POST" action="https://script.google.com/macros/s/AKfycbwXOwns-RMI3-tpbbqY2zEcMrjLbOyDuNU2rjkHwWky_cDxzS_jEOH074e8ugUI6AjFIg/exec" id="submit-form" class="form">
+                <form id="submit-form" class="form">
                     <div class="form__group u-margin-bottom-small">
-                        <input type="text" class="form__input" placeholder="Full-name" id="name" onkeypress="return isNumberKey(event)" required>
+                        <input type="text" name="name" class="form__input" placeholder="First Name" id="fname" onkeypress="return isNumberKey(event)" required>
                         <!-- <label for="name" class="form__label">Full name</label> -->
                     </div>
 
                     <div class="form__group u-margin-bottom-small">
-                        <input type="email" class="form__input" placeholder="E-mail address" id="email" required>
+                        <input type="email" name="email" class="form__input" placeholder="YOUR EMAIL" id="email" required>
                         <!-- <label for="email" class="form__label">Email address</label> -->
                     </div>
                     
@@ -1044,7 +1044,7 @@
                     </div> -->
                     
                     <div class="form__group u-margin-bottom-small">
-                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
                         <!-- <label for="email" class="form__label">Email address</label> -->
                     </div>
                     <!-- <div class="form__group u-margin-bottom-medium">
@@ -1165,11 +1165,11 @@
             </div>
         </section>
     -->
-    <!-- <script>
+    <script>
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbwXOwns-RMI3-tpbbqY2zEcMrjLbOyDuNU2rjkHwWky_cDxzS_jEOH074e8ugUI6AjFIg/exec",
+                url:"https://script.google.com/macros/s/AKfycbxJysPan_aTpbuPhq_y9k1-hYVcU_aoi9phRWw9mGSGq4iHhCn0DugAmSTMrVK5uJ9e/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
@@ -1183,7 +1183,7 @@
                 }
             })
         })
-    </script> -->
+    </script>
 </body>
 <script>
     var $root = $('html, body');
