@@ -39,8 +39,8 @@ html {
 
 body {
   box-sizing: border-box;
-  overflow-x: hidden !important;
-  margin: 0; }
+  padding: 3rem;
+  overflow-x: hidden !important; }
   @media (max-width: 56.25em) {
     body {
       padding: 0;
