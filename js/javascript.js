@@ -110,4 +110,5 @@ $('.owl-carousel').owlCarousel({
         video:true,
         lazyLoad:true,
         center:true,
+        nav:true
 })
