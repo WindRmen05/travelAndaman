@@ -217,7 +217,7 @@ body {
   background-color: #ffffff;
   text-align: center; }
   .section-gallery .gallery__box img {
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     object-fit: cover; }
 
@@ -255,6 +255,7 @@ body {
 
 .section-info {
   padding-top: 10rem;
+  padding-bottom: 5rem;
   width: 100%;
   height: 100vh; }
   .section-info video {
@@ -263,6 +264,8 @@ body {
     height: 700px !important;
     width: 100%;
     object-fit: cover; }
+    .section-info video:hover {
+      cursor: grab; }
   .section-info .slider {
     position: relative;
     margin-top: -450px;
@@ -280,7 +283,7 @@ body {
             transform: scale(1.1); }
 
 .section-tripPlan {
-  padding-top: 10rem;
+  padding-top: 20rem;
   display: grid;
   justify-content: center;
   align-items: center; }
