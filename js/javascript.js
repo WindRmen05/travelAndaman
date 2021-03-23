@@ -102,21 +102,12 @@ $(window).scroll(function() {
 });
 
 //info video toggle
-const li = document.querySelectorAll('.li');
-
-li.forEach((e) => {
-    e.addEventListener('click',e => {
-        if(e.target.id == 'li-1') {
-            // console.log('id: 1')
-        e.target.parentElement.parentElement.parentElement.children[0].src = 'videos/1.mp4';
-        } else if(e.target.id == 'li-2') {
-            // console.log('id: 2')
-            e.target.parentElement.parentElement.parentElement.children[0].src = 'videos/2.mp4';
-        } else if(e.target.id == 'li-3') {
-            // console.log('id: 3')
-            e.target.parentElement.parentElement.parentElement.children[0].src = 'videos/3.mp4';
-        }
-        // console.log(e.target.parentElement.parentElement.parentElement.children[0].src)
-        // console.log(e.target)
-    })
+$('.owl-carousel').owlCarousel({
+    items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
 })

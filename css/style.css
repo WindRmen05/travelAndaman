@@ -221,6 +221,38 @@ body {
     height: 100%;
     object-fit: cover; }
 
+.links {
+  position: fixed;
+  right: 6rem;
+  bottom: 4rem;
+  z-index: 999;
+  /* ---Mathrubhumi--- */
+  /* ---whatsapp--- */ }
+  .links .mathrubhumi {
+    z-index: 200;
+    margin-bottom: 10px; }
+    .links .mathrubhumi img {
+      width: 50px;
+      height: auto;
+      border-top-right-radius: 14px;
+      transition: .3s; }
+      .links .mathrubhumi img:hover {
+        transform: scale(1.1); }
+  .links #whatsapp #whatsapp-img {
+    cursor: pointer;
+    width: 50px;
+    transition: all .3s; }
+  @media only screen and (max-width: 768px) {
+    .links #whatsapp {
+      top: auto;
+      bottom: 40px;
+      right: 20px; }
+    .links #whatsapp #whatsapp-img {
+      width: 60px;
+      height: 60px; } }
+  .links #whatsapp #whatsapp-img:hover {
+    transform: scale(1.1); }
+
 .section-info {
   padding-top: 10rem;
   width: 100%;
@@ -228,28 +260,24 @@ body {
   .section-info video {
     margin-left: 50%;
     transform: translate(-50%);
+    height: 700px !important;
     width: 100%;
-    height: 100%;
     object-fit: cover; }
-  .section-info .thumbnails {
-    position: absolute;
-    margin-top: -150px;
-    left: 50%;
-    transform: translate(-50%);
-    list-style: none;
-    display: flex;
-    gap: 2rem; }
-    .section-info .thumbnails li i {
-      font-size: 30px;
-      color: transparent;
-      background-image: linear-gradient(to right, #2DABE3, #0c6388);
-      -webkit-background-clip: text;
-      transition: .5s ease; }
-    .section-info .thumbnails li i:hover {
-      transform: scale(1.1);
-      color: #fff;
-      background-image: linear-gradient(to right, #2DABE3, #0c6388);
-      -webkit-background-clip: text; }
+  .section-info .slider {
+    position: relative;
+    margin-top: -450px;
+    width: 100%; }
+    .section-info .slider .thumbnails {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      padding: 0; }
+      .section-info .slider .thumbnails li {
+        font-size: 30px; }
+        .section-info .slider .thumbnails li i {
+          color: white; }
+          .section-info .slider .thumbnails li i:hover {
+            transform: scale(1.1); }
 
 .section-tripPlan {
   padding-top: 10rem;
@@ -786,8 +814,7 @@ body {
   background-image: linear-gradient(to right bottom, #1797ce8c, #0c638800);
   background-size: cover;
   background-position: top;
-  position: relative;
-  /* ---whatsapp--- */ }
+  position: relative; }
   .header__background {
     z-index: -10;
     position: relative;
@@ -797,26 +824,6 @@ body {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-  .header #whatsapp {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 99999; }
-  .header #whatsapp #whatsapp-img {
-    cursor: pointer;
-    width: 70px;
-    height: 70px;
-    transition: all .3s; }
-  @media only screen and (max-width: 768px) {
-    .header #whatsapp {
-      top: auto;
-      bottom: 40px;
-      right: 20px; }
-    .header #whatsapp #whatsapp-img {
-      width: 60px;
-      height: 60px; } }
-  .header #whatsapp #whatsapp-img:hover {
-    transform: scale(1.1); }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (-weblit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(0, 117, 45, 0.801), rgba(236, 255, 244, 0.801)), url(/img/travel-andaman1/1.jpg); } }

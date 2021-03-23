@@ -10,10 +10,14 @@
     <script src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140216/jquery.cycle2.min.js"></script><!-- cycle slider -->
 
     <link rel="stylesheet" href="./css/lightslider.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- <link rel="stylesheet" href="css/ionicons.min.css">
         <link rel="stylesheet" href="css/icon-font.css"> -->
@@ -21,11 +25,24 @@
     <link rel="shortcut icon" type="image/png" href="img/logo icon-01.ico">
     <link rel="stylesheet" href="./css/slick.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
     <title>Travel Andaman</title>
 </head>
 
 
 <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <div class="links">
+        <div class="mathrubhumi">
+            <a href="https://tv.mathrubhumi.com/en/yathra/mathrubhumi-yathra-episode-265-andaman-and-nicobar-islands-north-bay-island-s-water-sports--1.42192" target="_blank"><img src="./img/mathrubhumi.jpg" alt="mathrubhumi"></a>
+        </div>
+        <div id="whatsapp">
+                <a href="https://wa.link/81v0ze" target="_blank"><img src="./img/travel-attraction/whatsapp.svg" alt="" id="whatsapp-img"></a>
+        </div>
+    </div>
 
     <div class="nav-menu">
         <div class="nav-menu__logo-box">
@@ -52,9 +69,6 @@
 
     
     <header class="header" id="header">
-        <div id="whatsapp">
-            <a href="https://wa.link/81v0ze"><img src="./img/travel-attraction/whatsapp.svg" alt="" id="whatsapp-img"></a>
-        </div>
         <div class="header__background">
             <img src="img/nat-11.jpg" alt="logo" class="header__logo">
             <!-- <video src="./videos/1.mp4" class="header__logo" loop muted autoplay> -->
@@ -222,14 +236,23 @@
             </div>
         </section>
 
-
         <section class="section-info" id="dives">
-                <video  loop muted autoplay src="videos/1.mp4" type="video/mp4"></video>
+                <!-- <video  loop muted autoplay src="videos/1.mp4" type="video/mp4"></video>
+                <div class="slider">
                     <ul class="thumbnails">
-                        <li class="li"><i id="li-1" class="fas fa-circle"></i></li>
-                        <li class="li"><i id="li-2" class="fas fa-circle"></i></li>
-                        <li class="li"><i id="li-3" class="fas fa-circle"></i></li>
+                        <li class="li"><i id="li-1" class="fas fa-arrow-left"></i></i></li>
+                        <li class="li"><i id="li-2" class="fas fa-arrow-right"></i></i></li>
                     </ul>
+                </div> -->
+                  
+                <!-- ----------------------------------------------------- -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item-video" data-merge="3"><video  loop muted autoplay src="videos/1.mp4" type="video/mp4"></video></div>
+                    <div class="item-video" data-merge="1"><video  loop muted autoplay src="videos/2.mp4" type="video/mp4"></video></div>
+                    <div class="item-video" data-merge="2"><video  loop muted autoplay src="videos/3.mp4" type="video/mp4"></video></div>
+                </div>
+                <!-- ----------------------------------------------------- -->
+
         </section>
         <!-- ------------------------------------------------------ -->
         <section class="section-tripPlan" id="tripPlan">
