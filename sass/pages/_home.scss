@@ -23,14 +23,18 @@
 //         }
 // }
 // }
+
+@media screen and (min-width:1800) {
+    p {
+        font-size: 20px;
+    }
+}
+
 .section-features{
     z-index: 777;
     padding:10rem 0 10rem 0;
     background-color: $color-grey-2;
     text-align: center;
-    // background-image: linear-gradient(to right bottom,
-    // hsla(202, 83%, 32%, 0.801), hsla(202, 84%, 53%, 0.801)),
-    // url(../img/nat-4.jpg);
     
     margin-top: -15vh;
 }
@@ -53,9 +57,11 @@
         height: auto;
         word-wrap: break-word;
         // padding: 5rem;
+        text-align: justify;
 
         @media only screen and (max-width: 600px) {
             padding: 3rem;
+            font-size: 16px;
         }
       }
 
@@ -104,7 +110,7 @@
 .links {
 
     position: fixed;
-    right:6rem;
+    right:4rem;
     bottom: 4rem;
     z-index: 999;
     // background: #fff;
@@ -129,7 +135,7 @@
         /* ---whatsapp--- */
         #whatsapp #whatsapp-img {
             cursor: pointer;
-            width: 50px;
+            width: 70px;
             // height: 70px;
             transition: all .3s;
         }
@@ -154,10 +160,10 @@
 }
 
 .section-info {
-    padding-top: 10rem;
+    padding-top: 15rem;
     padding-bottom: 5rem;
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
 
 
     // carousal
@@ -172,7 +178,7 @@
             margin-left:50%;
             // margin-top: 50%;
             transform: translate(-50%);
-            height: 700px!important;
+            height: 600px!important;
             width: 100%;
             object-fit: cover;
 
@@ -208,8 +214,26 @@
         }
 }
 
+.section-mathrubhumi {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    & a {
+        border-bottom: 3rem;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        // text-decoration-color: #444;
+    }
+
+    & h1 {
+        background-image: linear-gradient(to right, $color-secondary-medium, $color-teritiary-dark);
+        font-size: 100px;
+        color:#fff;
+    }
+}
+
 .section-tripPlan {
-    padding-top: 20rem;
+    padding-top: 5rem;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -237,6 +261,10 @@
                 box-shadow:0 0 0 transparent;
             }
 
+            & p {
+                font-size: 18px;
+            }
+
             & h2 {
             // background-image: linear-gradient(to right, $color-secondary-medium, $color-teritiary-dark);
             // -webkit-background-clip: text;
@@ -245,7 +273,7 @@
             }
 
             &__slidedown {
-                padding:0 1rem;
+                padding:1rem 1rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -336,7 +364,7 @@
 }
 
 .section-stories{
-    padding-top: 15rem;
+    padding-top: 10rem;
     position: relative;
     
     & .customer_reviews {

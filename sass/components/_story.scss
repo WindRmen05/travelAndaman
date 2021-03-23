@@ -1,5 +1,5 @@
 .story{
-    width:min-content;
+    max-width:400px;
     margin: 0 auto;
     // box-shadow: 0 3rem 6rem rgba($color-black, .1);
     background-color:#f3f3f3;
@@ -9,6 +9,8 @@
     // transform: skewX(-12deg);
     align-items: center;
     cursor: pointer;
+    display: flex;
+flex-direction: column;
 
     // & > *{
         //transform: skewX(-12deg);

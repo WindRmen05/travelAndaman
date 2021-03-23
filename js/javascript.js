@@ -101,9 +101,22 @@ $(window).scroll(function() {
 	}
 });
 
+//navbar background
+
+
+$(window).scroll(function() {     
+    var scroll = $(window).scrollTop();
+    if (scroll > 550) {
+        $(".nav-menu").addClass("active");
+    }
+    else {
+        $(".nav-menu").removeClass("active");
+    }
+});
+
 //info video toggle
 $('.owl-carousel').owlCarousel({
-    items:1,
+        items:1,
         merge:true,
         loop:true,
         margin:10,
@@ -112,3 +125,4 @@ $('.owl-carousel').owlCarousel({
         center:true,
         nav:true
 })
+

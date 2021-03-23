@@ -15,11 +15,12 @@
     }
 
     &__text{
-        text-align: start;
+        text-align: justify;
+        font-size: 16px;
 
-        @include respond(phone) {
-            text-align:center
-        }
+        // @include respond(phone) {
+        //     text-align:center
+        // }
     }
 
     &:hover{
