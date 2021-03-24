@@ -13,15 +13,15 @@ overflow: hidden;
             font-family: inherit;
             color: #222;
             font-size: 1.5rem;
-            width: 86%;
+            width: 100%;
             height: 200px;
             border-radius: 10px;
             box-shadow: 0 1rem 2rem rgab($color-black, .1);
             border: 3px solid #0c6388;
             padding: 1.5rem 2rem;
 
-            @media only screen and (max-width:398px) {
-                width: 80%;
+            @media only screen and (max-width:370px) {
+                width: 90%;
             }
         }
     }
@@ -40,11 +40,15 @@ overflow: hidden;
         background-color: rgba($color-white, 50%);
         border: none;
         border-bottom: 3px solid transparent;
-        width: 80%;
+        width: 100%;
         display: block;
         transition: all .3s;
         box-shadow: 0 1rem 2rem rgab($color-black, .1);
         border-bottom: 3px solid #0c6388;
+
+        @media only screen and (max-width:370px) {
+            width: 90%;
+        }
 
         & option {
            font-family: "lato",sans-serif; 

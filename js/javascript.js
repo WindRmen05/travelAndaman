@@ -92,14 +92,14 @@ x.forEach((el) => {
 // nodejs
 // const nodemailer = require('nodemailer');
 
-$(window).scroll(function() {
-	var $height = $(window).scrollTop();
-  if($height > 715) {
-      $('#logo').css('background-color','#fff');
-	} else {
-        $('#logo').css('background-color','transparent');
-	}
-});
+// $(window).scroll(function() {
+// 	var $height = $(window).scrollTop();
+//   if($height > 715) {
+//       $('#logo').css('background-color','#fff');
+// 	} else {
+//         $('#logo').css('background-color','transparent');
+// 	}
+// });
 
 //navbar background
 

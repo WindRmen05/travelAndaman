@@ -131,6 +131,11 @@
             align-items: center;
             grid-area: form;
             padding: 6rem 3rem 0 3rem;
+            @media only screen and (max-width:466px) {
+                & h3 {
+                font-size: 15px;
+            }
+            }
 
             @include respond(tab-port){
                 padding: 6rem 3rem 6rem 3rem;
@@ -151,9 +156,13 @@
             gap: 2rem;
             align-items: center;
             letter-spacing: 3px;
-            padding: 1rem;
+            padding: 1rem 1rem;
             border-radius: 3px;
             transition: all .3s;
+
+            @media only screen and (max-width:466px) {
+                padding: 0 4rem;
+            }
 
             & a {
                 text-decoration: none;

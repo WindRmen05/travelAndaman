@@ -178,7 +178,7 @@
             margin-left:50%;
             // margin-top: 50%;
             transform: translate(-50%);
-            height: 600px!important;
+            height: 700px!important;
             width: 100%;
             object-fit: cover;
 
@@ -229,6 +229,10 @@
         background-image: linear-gradient(to right, $color-secondary-medium, $color-teritiary-dark);
         font-size: 100px;
         color:#fff;
+
+        @media only screen and (max-width:657px) {
+            font-size: 50px;
+        }
     }
 }
 
@@ -241,12 +245,21 @@
     .tripPlan {
 
         &-wrap {
-            display: flex;
+            display: grid;
+            grid-template-areas: 'box1 box2';
             gap: 2rem;
 
-            @media only screen and (max-width: 600px) {
-                flex-direction: column;
+            @media only screen and (max-width: 800px) {
+                grid-template-areas: 'box1'
+                                     'box2';
             }
+        }
+
+        #box1 {
+            grid-area: 'box1';
+        }
+        #box2 {
+            grid-area: 'box2';
         }
 
         &-box {
@@ -256,6 +269,7 @@
             height: min-content;
             background-color: rgb(243, 243, 243);
             box-shadow:0 3.5rem 4rem rgba(0, 0, 0, 0.2);
+            max-width: 700px;
 
             @media only screen and (max-width: 600px) {
                 box-shadow:0 0 0 transparent;

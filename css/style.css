@@ -266,7 +266,7 @@ body {
   .section-info video {
     margin-left: 50%;
     transform: translate(-50%);
-    height: 600px !important;
+    height: 700px !important;
     width: 100%;
     object-fit: cover; }
     .section-info video:hover {
@@ -298,6 +298,9 @@ body {
     background-image: linear-gradient(to right, #2DABE3, #0c6388);
     font-size: 100px;
     color: #fff; }
+    @media only screen and (max-width: 657px) {
+      .section-mathrubhumi h1 {
+        font-size: 50px; } }
 
 .section-tripPlan {
   padding-top: 5rem;
@@ -305,17 +308,23 @@ body {
   justify-content: center;
   align-items: center; }
   .section-tripPlan .tripPlan-wrap {
-    display: flex;
+    display: grid;
+    grid-template-areas: 'box1 box2';
     gap: 2rem; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
       .section-tripPlan .tripPlan-wrap {
-        flex-direction: column; } }
+        grid-template-areas: 'box1' 'box2'; } }
+  .section-tripPlan .tripPlan #box1 {
+    grid-area: 'box1'; }
+  .section-tripPlan .tripPlan #box2 {
+    grid-area: 'box2'; }
   .section-tripPlan .tripPlan-box {
     padding: 2rem;
     border-radius: 3px;
     height: min-content;
     background-color: #f3f3f3;
-    box-shadow: 0 3.5rem 4rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 3.5rem 4rem rgba(0, 0, 0, 0.2);
+    max-width: 700px; }
     @media only screen and (max-width: 600px) {
       .section-tripPlan .tripPlan-box {
         box-shadow: 0 0 0 transparent; } }
@@ -741,15 +750,15 @@ body {
       font-family: inherit;
       color: #222;
       font-size: 1.5rem;
-      width: 86%;
+      width: 100%;
       height: 200px;
       border-radius: 10px;
       box-shadow: 0 1rem 2rem rgab(#000, 0.1);
       border: 3px solid #0c6388;
       padding: 1.5rem 2rem; }
-      @media only screen and (max-width: 398px) {
+      @media only screen and (max-width: 370px) {
         .form__group textarea {
-          width: 80%; } }
+          width: 90%; } }
   .form__group:not(:last-child) {
     margin-bottom: 3rem; }
   .form__input {
@@ -762,11 +771,14 @@ body {
     background-color: white;
     border: none;
     border-bottom: 3px solid transparent;
-    width: 80%;
+    width: 100%;
     display: block;
     transition: all .3s;
     box-shadow: 0 1rem 2rem rgab(#000, 0.1);
     border-bottom: 3px solid #0c6388; }
+    @media only screen and (max-width: 370px) {
+      .form__input {
+        width: 90%; } }
     .form__input option {
       font-family: "lato",sans-serif; }
     @media (max-width: 56.25em) {
@@ -988,6 +1000,9 @@ body {
       align-items: center;
       grid-area: form;
       padding: 6rem 3rem 0 3rem; }
+      @media only screen and (max-width: 466px) {
+        .footer .footer-grid .contact-info h3 {
+          font-size: 15px; } }
       @media (max-width: 56.25em) {
         .footer .footer-grid .contact-info {
           padding: 6rem 3rem 6rem 3rem; } }
@@ -1001,9 +1016,12 @@ body {
       gap: 2rem;
       align-items: center;
       letter-spacing: 3px;
-      padding: 1rem;
+      padding: 1rem 1rem;
       border-radius: 3px;
       transition: all .3s; }
+      @media only screen and (max-width: 466px) {
+        .footer .footer-grid .contact-details-item {
+          padding: 0 4rem; } }
       .footer .footer-grid .contact-details-item a {
         text-decoration: none;
         color: inherit; }
@@ -1084,7 +1102,7 @@ body {
       .navigation__button {
         top: 3rem;
         right: 3rem; } }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     .navigation .navigation__checkbox {
       visibility: hidden; }
     .navigation .navigation__button {
@@ -1101,7 +1119,7 @@ body {
     opacity: 0;
     width: 0;
     transition: all 1s cubic-bezier(0.78, -0.55, 0.265, 2); }
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1200px) {
       .navigation__nav {
         opacity: 1;
         width: 100%;
@@ -1116,7 +1134,7 @@ body {
     list-style: none;
     text-align: center;
     width: 100%; }
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1200px) {
       .navigation__list {
         display: flex;
         top: 5rem;
@@ -1129,7 +1147,7 @@ body {
     display: inline-block;
     font-size: 3rem;
     font-weight: 300;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     color: #1797ce;
     text-decoration: none;
     text-transform: uppercase;
@@ -1139,7 +1157,7 @@ body {
     .navigation__link:link span, .navigation__link:visited span {
       margin-right: 2px;
       display: inline-block; }
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1200px) {
       .navigation__link:link, .navigation__link:visited {
         font-size: 2rem; } }
   .navigation__link:hover, .navigation__link:active {
@@ -1195,6 +1213,7 @@ body {
   .nav-menu__logo {
     height: auto;
     width: 80px;
+    background: #ffffff;
     border-radius: 50%;
     padding: 1rem;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
