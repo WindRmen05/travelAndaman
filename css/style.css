@@ -1107,6 +1107,17 @@ body {
       visibility: hidden; }
     .navigation .navigation__button {
       visibility: hidden; } }
+  .navigation__background {
+    overflow-x: hidden;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1000;
+    transition: transform .8s;
+    box-shadow: 0 0rem 6rem rgba(0, 0, 0, 0.116); }
   .navigation__nav {
     background-color: white;
     overflow-x: hidden;
@@ -1123,8 +1134,7 @@ body {
       .navigation__nav {
         opacity: 1;
         width: 100%;
-        height: 100px;
-        box-shadow: 0 0rem 6rem rgba(0, 0, 0, 0.116); } }
+        height: 100px; } }
   .navigation__list {
     overflow-x: hidden;
     position: absolute;

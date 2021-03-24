@@ -41,28 +41,18 @@
         
     }
 
-    // &__background{
-    //     overflow-x: hidden;
-    //     height: 6rem;
-    //     width: 6rem;
-    //     border-radius: 50%;
-    //     position:fixed;
-    //     top: 6.5rem;
-    //     right: 6.5rem;
-    //     background-image: linear-gradient(#fff, rgb(245, 245, 245));
-    //     z-index: 1000;
-    //     transition: transform .8s ;
-
-    //     @include respond(tab-port){
-    //         top:4.5rem;
-    //         right: 4.5rem;
-    //     }
-
-    //     @include respond(phone){
-    //         top:3.5rem;
-    //         right: 3.5rem;
-    //     }
-    // }
+    &__background{
+        overflow-x: hidden;
+        height: 100px;
+        width: 100%;
+        position:fixed;
+        top: 0;
+        left: 0;
+        background: rgb(255, 255, 255);
+        z-index: 1000;
+        transition: transform .8s ;
+        box-shadow: 0 0rem 6rem rgba(0, 0, 0, 0.116);
+    }
 
     &__nav{
         background-color: rgb(255, 255, 255);
@@ -82,7 +72,6 @@
             opacity:1;
             width: 100%;
             height: 100px;
-            box-shadow: 0 0rem 6rem rgba(0, 0, 0, 0.116);
         }
     }
 
