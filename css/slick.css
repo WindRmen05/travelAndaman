@@ -118,3 +118,28 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick-next::before, .slick-prev::before {
+    color: blue;
+}
+
+/* .slick-slider{
+    margin: 60px auto;
+    width: 500px;
+  } */
+
+.slick-nav {
+    position: absolute;
+    margin-top: -9rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-nav button {
+    border: none;
+    /* background: #2DABE3; */
+    background: none;
+    color: rgb(0, 0, 0);
+    height: 50px;
+}
