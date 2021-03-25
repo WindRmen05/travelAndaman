@@ -129,8 +129,8 @@
   } */
 
 .slick-nav {
-    position: absolute;
-    margin-top: -9rem;
+    position: relative;
+    margin-top: -11rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
