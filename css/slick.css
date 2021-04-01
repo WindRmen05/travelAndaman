@@ -129,11 +129,21 @@
   } */
 
 .slick-nav {
-    position: relative;
-    margin-top: -11rem;
+    position: absolute;
+    left: 0;
+    margin-top: 13rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 0 3rem;
+    z-index: 200;
+}
+
+@media screen and (max-width:900px) {
+    .slick-nav {
+        padding: 0 0;
+        margin-top: 15rem;
+    }
 }
 
 .slick-nav button {
