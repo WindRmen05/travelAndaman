@@ -437,3 +437,16 @@
     }
 
 }
+
+.section-logos {
+    padding-bottom: 10rem;
+
+    & .brand-logos {
+        display :flex;
+        justify-content:center;
+
+        & img {
+            width: 40%;
+        }
+    }
+}

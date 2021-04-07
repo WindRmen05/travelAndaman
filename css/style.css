@@ -414,6 +414,14 @@ body {
       .book__heading {
         width: 100%; } }
 
+.section-logos {
+  padding-bottom: 10rem; }
+  .section-logos .brand-logos {
+    display: flex;
+    justify-content: center; }
+    .section-logos .brand-logos img {
+      width: 40%; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -1130,7 +1138,7 @@ body {
     overflow-x: hidden;
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 48%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
@@ -1148,7 +1156,7 @@ body {
     display: inline-block;
     font-size: 3rem;
     font-weight: 300;
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
     color: #1797ce;
     text-decoration: none;
     text-transform: uppercase;
