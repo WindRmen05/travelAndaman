@@ -149,7 +149,7 @@ body {
     animation: moveinright 1s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: .3rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
