@@ -356,6 +356,8 @@ body {
       height: 0px;
       overflow: hidden;
       transition: all .5s; }
+      .section-tripPlan .tripPlan-box__items p {
+        text-transform: capitalize !important; }
 
 .more {
   height: max-content !important; }

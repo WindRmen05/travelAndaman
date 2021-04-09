@@ -341,6 +341,10 @@
                 height: 0px;
                 overflow: hidden;
                 transition: all .5s;
+
+                & p {
+                    text-transform: capitalize!important;
+                }
             }
         }
     }
