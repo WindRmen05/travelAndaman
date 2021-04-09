@@ -31,8 +31,8 @@
 }
 
 .section-features{
+    padding-top: 10rem;
     z-index: 777;
-    padding:10rem 0 10rem 0;
     background-color: $color-grey-2;
     text-align: center;
     
@@ -40,7 +40,9 @@
 }
 
 .section-readme {
-    padding: 10rem 0 10em 0;
+    padding: 10rem 3%;
+    // padding-bottom: 10rem;
+    margin-bottom: 10rem;
     display: grid;
     grid-template-rows: min-content 2fr;
     justify-content: center;
@@ -60,7 +62,7 @@
         text-align: justify;
 
         @media only screen and (max-width: 600px) {
-            padding: 3rem;
+            // padding: 3rem;
             font-size: 16px;
         }
       }
@@ -79,7 +81,7 @@
 }
 
 .section-gallery{
-    // padding:20rem 0 10rem 0;
+    padding-top: 10rem;
     background-color: $color-grey-2;
     text-align: center;
     // background-image: linear-gradient(to right bottom,
@@ -160,7 +162,7 @@
 }
 
 .section-info {
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
     width: 100%;
     // height: 100vh;
@@ -216,7 +218,6 @@
 
 .section-mathrubhumi {
     padding-top: 5rem;
-    padding-bottom: 5rem;
 
     & a {
         border-bottom: 3rem;
@@ -236,7 +237,8 @@
 }
 
 .section-tripPlan {
-    padding-top: 5rem;
+    padding-top: 10rem;
+    // padding-bottom: 5rem;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -448,9 +450,15 @@
     & .brand-logos {
         display :flex;
         justify-content:center;
+        align-items: center;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
 
         & img {
-            width: 40%;
+            max-width: 40%;
+            min-width: 300px;
         }
     }
 }
